@@ -3,6 +3,7 @@ Given /^a user visits the 'Home Page'$/ do
 end
 
 Then /^they should see the content 'SocioPub'$/ do
+  
   expect(page).to have_content('SocioPub')
 end
 

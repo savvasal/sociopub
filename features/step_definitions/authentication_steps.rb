@@ -2,7 +2,7 @@ base_title = "SocioPub"
 
 
 Given /^a user visits the 'Home Page'$/ do
-  visit '/static_pages/home'
+  visit root_path
 end
 
 Then /^they should see the content 'SocioPub'$/ do

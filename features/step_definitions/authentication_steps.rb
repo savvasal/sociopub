@@ -6,6 +6,10 @@ Then /^they should see the content 'SocioPub'$/ do
   expect(page).to have_content('SocioPub')
 end
 
+Then /^they should see the title 'Home'$/ do
+  expect(page).to have_title('SocioPub | Home')
+end
+
 Then /^they should see the content 'Help'$/ do
   expect(page).to have_content('Help')
 end

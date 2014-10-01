@@ -1,14 +1,14 @@
 == README ==
 
-* Install
-  
-  git clone https://github.com/Savinos90/sociopub  
-  cd sociopub
-  bundle install --without production
-  bundle update
-  bundle install
-  rails s
-
+## Installation
+```  
+  $ git clone https://github.com/Savinos90/sociopub  
+  $ cd sociopub
+  $ bundle install --without production
+  $ bundle update
+  $ bundle install
+  $ rails s
+```
 * Ruby version
 
 * System dependencies

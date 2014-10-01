@@ -7,7 +7,7 @@
   $ bundle install
   $ rails s
 ```
-http://localhost:3000/ 
+Visit the root url http://localhost:3000/ 
 * Ruby version
 
 * System dependencies

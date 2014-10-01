@@ -1,5 +1,3 @@
-== README ==
-
 ## Installation
 ```  
   $ git clone https://github.com/Savinos90/sociopub  

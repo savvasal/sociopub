@@ -5,6 +5,7 @@
   $ bundle install --without production
   $ bundle update
   $ bundle install
+  $  bundle exec rake db:migrate
   $ rails s
 ```
 Visit the root url http://localhost:3000/ 
@@ -24,3 +25,4 @@ Visit the root url http://localhost:3000/
 
 * Deployment instructions
 
+ 

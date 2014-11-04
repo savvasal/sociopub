@@ -1,51 +1,34 @@
-Feature: User
+#language: el
+Λειτουργία: Χρήστης
 
-  Scenario: Test for name and email attributes
-    Given a new user created
-    Then user should response to name
-    And user should response to email
-    And user should response to password digest
-    And user should response to password
-    And user should response to password confirmation
-    And user should response to authenticate
-    And user should be valid
+  Σενάριο: Έλεγχος για όνομα και email
+    Δεδομένου ότι δημιουργήθηκε ένας νεός χρήστης
+    Τότε πρέπει να έχει καταχωρήσει όνομα χρήστη
+    Και να έχει καταχωρήσει email
+    Και να έχει καταχωρήσει κωδικό 2 φορές
+    Και να είναι έγκυρος
 
-  Scenario: Name not present
-    Given a name is not present
-    Then user should not be valid
+  Σενάριο: Δεν έχει καταχωρηθεί όνομα
+    Δεδομένου δεν έχει καταχωρηθεί κάποιο όνομα
+    Τότε ο χρήστης δεν πρέπει να είναι έγκυρος
 
-  Scenario: Too long names
-    Given a name is too long
-    Then user should not be valid
+  Σενάριο: Πολύ μεγάλο όνομα χρήστη.
+    Δεδομένου ότι το όνομα χρήστη είναι πολύ μεγάλο
+    Τότε ο χρήστης δεν πρέπει να είναι έγκυρος
 
-  Scenario Outline: Ivalid email format
-    Given a user with name <name> and email like that <email>
-    Then user should not be valid
-    Examples:
+    Περιγραφή Σεναρίου: Μη έγκυρος χρήστης
+    Δίνεται ένα χρήστης με όνομα <name> και email <email>
+    Τότε οι χρήστες δεν πρέπει να είναι έγκυροι
+    Παραδείγματα:
     | name | email             |
     | fooa | user@foo,com      |
     | foob | user_at_foo.org   |
     | fooc | example.user@foo. |
     | food | foo@bar_baz.com   |
     | fooe | foo@bar+baz.com   |
- 
-  Scenario: Duplicate email
-    Given an email address is already taken
-    Then user should not be valid
 
-  Scenario: Password is not present
-    Given password is not present
-    Then user should not be valid
-
-  Scenario: Confirm password doesn't match
-    Given password doesnt match confirmation
-    Then user should not be valid
-
-  Scenario: Short password
-    Given a password is too short
-    Then user should not be valid
-
-  Scenario: Inalid password
-    Given a user exist
-    And enter an invalid password
-    Then password should not be valid
+    
+  Σενάριο: Σύνδεση εγγεραμένου χρήστη
+    Δεδομένου ότι ο χρήστης είναι εγγεγραμένος
+    Όταν καταχωρήσει το όνομα χρήστη και κωδικό που του αντιστοιχεί
+    Τότε να βλέπει την εξατομικευμένη σελίδα

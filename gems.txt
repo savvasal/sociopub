@@ -1,0 +1,757 @@
+actionmailer (4.0.8)
+    Author: David Heinemeier Hansson
+    Homepage: http://www.rubyonrails.org
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Email composition, delivery, and receiving framework (part of
+    Rails).
+
+actionpack (4.0.8)
+    Author: David Heinemeier Hansson
+    Homepage: http://www.rubyonrails.org
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Web-flow and rendering framework putting the VC in MVC (part of
+    Rails).
+
+activemodel (4.0.8)
+    Author: David Heinemeier Hansson
+    Homepage: http://www.rubyonrails.org
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    A toolkit for building modeling frameworks (part of Rails).
+
+activerecord (4.0.8)
+    Author: David Heinemeier Hansson
+    Homepage: http://www.rubyonrails.org
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Object-relational mapper framework (part of Rails).
+
+activerecord-deprecated_finders (1.0.3)
+    Author: Jon Leighton
+    Homepage: https://github.com/rails/activerecord-deprecated_finders
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    This gem contains deprecated finder APIs extracted from Active
+    Record.
+
+activesupport (4.0.8)
+    Author: David Heinemeier Hansson
+    Homepage: http://www.rubyonrails.org
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    A toolkit of support libraries and Ruby core extensions extracted
+    from the Rails framework.
+
+arel (4.0.2)
+    Authors: Aaron Patterson, Bryan Halmkamp, Emilio Tagua, Nick Kallen
+    Homepage: http://github.com/rails/arel
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Arel is a SQL AST manager for Ruby
+
+bcrypt-ruby (3.1.2)
+    Author: Coda Hale
+    Homepage: http://bcrypt-ruby.rubyforge.org
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    OpenBSD's bcrypt() password hashing algorithm.
+
+bigdecimal (1.2.0)
+    Authors: Kenta Murata, Shigeo Kobayashi
+    Homepage: http://www.ruby-lang.org
+    Installed at (default): /home/salexa/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0
+
+    Arbitrary-precision decimal floating-point number library.
+
+bootstrap-sass (2.3.2.0)
+    Author: Thomas McDonald
+    Homepage: http://github.com/thomas-mcdonald/bootstrap-sass
+    License: Apache 2.0
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Twitter's Bootstrap, converted to Sass and ready to drop into Rails
+    or Compass
+
+builder (3.1.4)
+    Author: Jim Weirich
+    Homepage: http://onestepback.org
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Builders for MarkUp.
+
+bundler (1.6.5)
+    Authors: André Arko, Terence Lee, Carl Lerche, Yehuda Katz
+    Homepage: http://bundler.io
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@global
+
+    The best way to manage your application's dependencies
+
+bundler-unload (1.0.2)
+    Author: Michal Papis
+    Homepage: https://github.com/mpapis/bundler-unload
+    License: Apache 2.0
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@global
+
+    Allow unloading bundler after Bundler.load
+
+capybara (2.1.0)
+    Author: Jonas Nicklas
+    Homepage: http://github.com/jnicklas/capybara
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Capybara aims to simplify the process of integration testing Rack
+    applications, such as Rails, Sinatra or Merb
+
+celluloid (0.16.0)
+    Author: Tony Arcieri
+    Homepage: https://github.com/celluloid/celluloid
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Actor-based concurrent object framework for Ruby
+
+childprocess (0.5.5, 0.5.4, 0.5.3)
+    Author: Jari Bakken
+    Homepage: http://github.com/jarib/childprocess
+    License: MIT
+    Installed at (0.5.5): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (0.5.4): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (0.5.3): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    This gem aims at being a simple and reliable solution for
+    controlling external programs running in the background on any Ruby
+    / OS combination.
+
+coderay (1.1.0)
+    Author: Kornelius Kalnbach
+    Homepage: http://coderay.rubychan.de
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Fast syntax highlighting for selected languages.
+
+coffee-rails (4.0.1)
+    Author: Santiago Pastorino
+    Homepage: https://github.com/rails/coffee-rails
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    CoffeeScript adapter for the Rails asset pipeline.
+
+coffee-script (2.3.0)
+    Authors: Jeremy Ashkenas, Joshua Peek, Sam Stephenson
+    Homepage: http://github.com/josh/ruby-coffee-script
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Ruby CoffeeScript Compiler
+
+coffee-script-source (1.8.0, 1.7.1)
+    Author: Jeremy Ashkenas
+    Homepage: http://jashkenas.github.com/coffee-script/
+    License: MIT
+    Installed at (1.8.0): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (1.7.1): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    The CoffeeScript Compiler
+
+cucumber (1.3.17, 1.3.16)
+    Author: Aslak Hellesøy
+    Homepage: http://cukes.info
+    Installed at (1.3.17): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (1.3.16): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    cucumber-1.3.17
+
+cucumber-rails (1.4.1, 1.4.0)
+    Authors: Aslak Hellesøy, Dennis Blöte, Rob Holland
+    Homepage: http://cukes.info
+    License: MIT
+    Installed at (1.4.1): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (1.4.0): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    cucumber-rails-1.4.1
+
+diff-lcs (1.2.5)
+    Author: Austin Ziegler
+    Homepage: http://diff-lcs.rubyforge.org/
+    Licenses: MIT, Perl Artistic v2, GNU GPL v2
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Diff::LCS computes the difference between two Enumerable sequences
+    using the McIlroy-Hunt longest common subsequence (LCS) algorithm
+
+erubis (2.7.0)
+    Author: makoto kuwata
+    Homepage: http://www.kuwata-lab.com/erubis/
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    a fast and extensible eRuby implementation which supports
+    multi-language
+
+execjs (2.2.1)
+    Authors: Sam Stephenson, Josh Peek
+    Homepage: https://github.com/sstephenson/execjs
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Run JavaScript code from Ruby
+
+executable-hooks (1.3.2)
+    Author: Michal Papis
+    Homepage: https://github.com/mpapis/executable-hooks
+    License: Apache 2.0
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@global
+
+    Hook into rubygems executables allowing extra actions to be taken
+    before executable is run.
+
+factory_girl (4.2.0)
+    Authors: Josh Clayton, Joe Ferris
+    Homepage: https://github.com/thoughtbot/factory_girl
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    factory_girl provides a framework and DSL for defining and using
+    model instance factories.
+
+factory_girl_rails (4.2.0)
+    Author: Joe Ferris
+    Homepage: http://github.com/thoughtbot/factory_girl_rails
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    factory_girl_rails provides integration between factory_girl and
+    rails 3
+
+ffi (1.9.5, 1.9.3)
+    Author: Wayne Meissner
+    Homepage: http://wiki.github.com/ffi/ffi
+    License: BSD
+    Installed at (1.9.5): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (1.9.3): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Ruby FFI
+
+formatador (0.2.5)
+    Author: geemus (Wesley Beary)
+    Homepage: http://github.com/geemus/formatador
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Ruby STDOUT text formatting
+
+gem-wrappers (1.2.5)
+    Author: Michal Papis
+    Homepage: https://github.com/rvm/gem-wrappers
+    License: Apache 2.0
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@global
+
+    Create gem wrappers for easy use of gems in cron and other system
+    locations.
+
+gherkin (2.12.2)
+    Authors: Mike Sassak, Gregory Hnatiuk, Aslak Hellesøy
+    Homepage: http://github.com/cucumber/gherkin
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    gherkin-2.12.2
+
+guard (2.6.1)
+    Author: Thibaud Guillaume-Gentil
+    Homepage: http://guardgem.org
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Guard keeps an eye on your file modifications
+
+guard-rspec (2.5.0)
+    Author: Thibaud Guillaume-Gentil
+    Homepage: http://rubygems.org/gems/guard-rspec
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Guard gem for RSpec
+
+hike (1.2.3)
+    Author: Sam Stephenson
+    Homepage: http://github.com/sstephenson/hike
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Find files in a set of paths
+
+hitimes (1.2.2)
+    Author: Jeremy Hinegardner
+    Homepage: http://github.com/copiousfreetime/hitimes
+    License: ISC
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Hitimes is a fast, high resolution timer library for recording
+    performance metrics.  It uses the appropriate low method calls for
+    each system to get the highest granularity time increments possible.
+
+i18n (0.6.11)
+    Authors: Sven Fuchs, Joshua Harvey, Matt Aimonetti, Stephan Soller,
+    Saimon Moore
+    Homepage: http://github.com/svenfuchs/i18n
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    New wave Internationalization support for Ruby
+
+io-console (0.4.2)
+    Author: Nobu Nakada
+    Homepage: http://www.ruby-lang.org
+    License: ruby
+    Installed at (default): /home/salexa/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0
+
+    Console interface
+
+jbuilder (1.5.3, 1.0.2)
+    Author: David Heinemeier Hansson
+    License: MIT
+    Installed at (1.5.3): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (1.0.2): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Create JSON structures via a Builder-style DSL
+
+jquery-rails (3.1.2, 3.1.1, 3.0.4)
+    Author: André Arko
+    Homepage: http://rubygems.org/gems/jquery-rails
+    License: MIT
+    Installed at (3.1.2): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (3.1.1): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (3.0.4): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Use jQuery with Rails 3+
+
+json (1.8.1, 1.7.7)
+    Author: Florian Frank
+    Homepage: http://flori.github.com/json
+    License: Ruby
+    Installed at (1.8.1): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (1.7.7, default): /home/salexa/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0
+
+    JSON Implementation for Ruby
+
+listen (2.7.11)
+    Author: Thibaud Guillaume-Gentil
+    Homepage: https://github.com/guard/listen
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Listen to file modifications
+
+lumberjack (1.0.9)
+    Author: Brian Durand
+    Homepage: http://github.com/bdurand/lumberjack
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    A simple, powerful, and very fast logging utility that can be a drop
+    in replacement for Logger or ActiveSupport::BufferedLogger.
+
+mail (2.5.4)
+    Author: Mikel Lindsaar
+    Homepage: http://github.com/mikel/mail
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Mail provides a nice Ruby DSL for making, sending and reading
+    emails.
+
+method_source (0.8.2)
+    Author: John Mair (banisterfiend)
+    Homepage: http://banisterfiend.wordpress.com
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    retrieve the sourcecode for a method
+
+mime-types (1.25.1)
+    Author: Austin Ziegler
+    Homepage: http://mime-types.rubyforge.org/
+    Licenses: MIT, Artistic 2.0, GPL-2
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    This library allows for the identification of a file's likely MIME
+    content type
+
+mini_portile (0.6.0)
+    Author: Luis Lavena
+    Homepage: http://github.com/luislavena/mini_portile
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Simplistic port-like solution for developers
+
+minitest (4.7.5, 4.3.2)
+    Author: Ryan Davis
+    Homepage: https://github.com/seattlerb/minitest
+    Installed at (4.7.5): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (4.3.2, default): /home/salexa/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0
+
+    minitest provides a complete suite of testing facilities supporting
+    TDD, BDD, mocking, and benchmarking
+
+multi_json (1.10.1)
+    Authors: Michael Bleigh, Josh Kalderimis, Erik Michaels-Ober, Pavel
+    Pravosud
+    Homepage: http://github.com/intridea/multi_json
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    A common interface to multiple JSON libraries.
+
+multi_test (0.1.1)
+    Authors: Matt Wynne, Steve Tooke
+    Homepage: http://cukes.info
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    multi-test-0.1.1
+
+nokogiri (1.6.3.1)
+    Authors: Aaron Patterson, Mike Dalessio, Yoko Harada, Tim Elliott,
+    Akinori MUSHA
+    Homepage: http://nokogiri.org
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Nokogiri (鋸) is an HTML, XML, SAX, and Reader parser
+
+polyglot (0.3.5)
+    Author: Clifford Heath
+    Homepage: http://github.com/cjheath/polyglot
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Augment 'require' to load non-Ruby file types
+
+pry (0.10.1)
+    Authors: John Mair (banisterfiend), Conrad Irwin, Ryan Fitzgerald
+    Homepage: http://pryrepl.org
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    An IRB alternative and runtime developer console
+
+psych (2.0.0)
+    Author: Aaron Patterson
+    Homepage: http://github.com/tenderlove/psych
+    Installed at (default): /home/salexa/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0
+
+    Psych is a YAML parser and emitter
+
+rack (1.5.2)
+    Author: Christian Neukirchen
+    Homepage: http://rack.github.com/
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    a modular Ruby webserver interface
+
+rack-test (0.6.2)
+    Author: Bryan Helmkamp
+    Homepage: http://github.com/brynary/rack-test
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Simple testing API built on Rack
+
+rails (4.0.8)
+    Author: David Heinemeier Hansson
+    Homepage: http://www.rubyonrails.org
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Full-stack web application framework.
+
+railties (4.0.8)
+    Author: David Heinemeier Hansson
+    Homepage: http://www.rubyonrails.org
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Tools for creating, working with, and running Rails applications.
+
+rake (10.3.2, 0.9.6)
+    Authors: Eric Hodel, Jim Weirich
+    Homepage: https://github.com/jimweirich/rake
+    License: MIT
+    Installed at (10.3.2): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (0.9.6, default): /home/salexa/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0
+
+    Rake is a Make-like program implemented in Ruby
+
+rb-fsevent (0.9.4)
+    Authors: Thibaud Guillaume-Gentil, Travis Tilley
+    Homepage: http://rubygems.org/gems/rb-fsevent
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Very simple & usable FSEvents API
+
+rb-inotify (0.9.5)
+    Author: Nathan Weizenbaum
+    Homepage: http://github.com/nex3/rb-inotify
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    A Ruby wrapper for Linux's inotify, using FFI
+
+rdoc (4.1.2, 4.1.1, 4.0.0, 3.12.2)
+    Authors: Eric Hodel, Dave Thomas, Phil Hagelberg, Tony Strauss
+    Homepage: http://docs.seattlerb.org/rdoc
+    License: Ruby
+    Installed at (4.1.2): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (4.1.1): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (4.0.0, default): /home/salexa/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0
+                 (3.12.2): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    RDoc produces HTML and command-line documentation for Ruby projects
+
+rspec (2.13.0)
+    Authors: Steven Baker, David Chelimsky
+    Homepage: http://github.com/rspec
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    rspec-2.13.0
+
+rspec-core (2.13.1)
+    Authors: Steven Baker, David Chelimsky, Chad Humphries
+    Homepage: http://github.com/rspec/rspec-core
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    rspec-core-2.13.1
+
+rspec-expectations (2.13.0)
+    Authors: Steven Baker, David Chelimsky
+    Homepage: http://github.com/rspec/rspec-expectations
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    rspec-expectations-2.13.0
+
+rspec-mocks (2.13.1)
+    Authors: Steven Baker, David Chelimsky
+    Homepage: http://github.com/rspec/rspec-mocks
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    rspec-mocks-2.13.1
+
+rspec-rails (2.13.1)
+    Author: David Chelimsky
+    Homepage: http://github.com/rspec/rspec-rails
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    rspec-rails-2.13.1
+
+rubygems-bundler (1.4.4)
+    Authors: Josh Hull, Michal Papis
+    Homepage: http://mpapis.github.com/rubygems-bundler
+    License: Apache-2.0
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@global
+
+    Stop using bundle exec
+
+rubygems-update (2.1.9)
+    Authors: Jim Weirich, Chad Fowler, Eric Hodel
+    Homepage: http://rubygems.org
+    Licenses: Ruby, MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    RubyGems is a package management framework for Ruby
+
+rubyzip (0.9.9)
+    Author: Alan Harper
+    Homepage: http://github.com/aussiegeek/rubyzip
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    rubyzip is a ruby module for reading and writing zip files
+
+rvm (1.11.3.9)
+    Authors: Wayne E. Seguin, Michal Papis
+    Homepage: http://rvm.io/
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@global
+
+    RVM Ruby Gem Library
+
+sass (3.4.5, 3.4.0, 3.3.14, 3.2.19)
+    Authors: Natalie Weizenbaum, Chris Eppstein, Hampton Catlin
+    Homepage: http://sass-lang.com/
+    License: MIT
+    Installed at (3.4.5): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (3.4.0): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (3.3.14): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (3.2.19): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    A powerful but elegant CSS compiler that makes CSS fun again.
+
+sass-rails (4.0.3, 4.0.1)
+    Authors: wycats, chriseppstein
+    Homepage: https://github.com/rails/sass-rails
+    License: MIT
+    Installed at (4.0.3): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (4.0.1): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Sass adapter for the Rails asset pipeline.
+
+sdoc (0.4.1, 0.4.0, 0.3.20)
+    Authors: Vladimir Kolesnikov, Nathan Broadbent, Jean Mertz, Zachary
+    Scott
+    Homepage: http://github.com/voloko/sdoc
+    License: MIT
+    Installed at (0.4.1): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (0.4.0): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (0.3.20): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    rdoc html with javascript search index.
+
+selenium-webdriver (2.35.1)
+    Author: Jari Bakken
+    Homepage: http://selenium.googlecode.com
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    The next generation developer focused tool for automated testing of
+    webapps
+
+slop (3.6.0)
+    Author: Lee Jarvis
+    Homepage: http://github.com/leejarvis/slop
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Simple Lightweight Option Parsing
+
+sprockets (2.12.1, 2.11.0)
+    Authors: Sam Stephenson, Joshua Peek
+    Homepage: http://getsprockets.org/
+    License: MIT
+    Installed at (2.12.1): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (2.11.0): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Rack-based asset packaging system
+
+sprockets-rails (2.1.4, 2.1.3, 2.0.1)
+    Author: Joshua Peek
+    Homepage: https://github.com/rails/sprockets-rails
+    License: MIT
+    Installed at (2.1.4): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (2.1.3): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (2.0.1): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Sprockets Rails integration
+
+sqlite3 (1.3.9, 1.3.8)
+    Authors: Jamis Buck, Luis Lavena, Aaron Patterson
+    Homepage: https://github.com/sparklemotion/sqlite3-ruby
+    License: BSD-3
+    Installed at (1.3.9): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (1.3.8): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    This module allows Ruby programs to interface with the SQLite3
+    database engine (http://www.sqlite.org)
+
+test-unit (2.0.0.0)
+    Author: Shota Fukumori
+    Homepage: http://www.ruby-lang.org
+    Installed at (default): /home/salexa/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/gems/2.0.0
+
+    test/unit compatible API testing framework
+
+thor (0.19.1)
+    Authors: Yehuda Katz, José Valim
+    Homepage: http://whatisthor.com/
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Thor is a toolkit for building powerful command-line interfaces.
+
+thread_safe (0.3.4)
+    Authors: Charles Oliver Nutter, thedarkone
+    Homepage: https://github.com/headius/thread_safe
+    License: Apache-2.0
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    A collection of data structures and utilities to make thread-safe
+    programming in Ruby easier
+
+tilt (1.4.1)
+    Author: Ryan Tomayko
+    Homepage: http://github.com/rtomayko/tilt/
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Generic interface to multiple Ruby template engines
+
+timers (4.0.1)
+    Author: Tony Arcieri
+    Homepage: https://github.com/celluloid/timers
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Schedule procs to run after a certain time, or at periodic
+    intervals, using any API that accepts a timeout
+
+treetop (1.4.15)
+    Authors: Nathan Sobo, Clifford Heath
+    Homepage: https://github.com/cjheath/treetop
+    License: MIT
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    A Ruby-based text parsing and interpretation DSL
+
+turbolinks (2.3.0, 2.2.2, 1.1.1)
+    Author: David Heinemeier Hansson
+    Homepage: https://github.com/rails/turbolinks/
+    License: MIT
+    Installed at (2.3.0): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (2.2.2): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (1.1.1): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Turbolinks makes following links in your web application faster (use
+    with Rails Asset Pipeline)
+
+tzinfo (0.3.41, 0.3.40)
+    Author: Philip Ross
+    Homepage: http://tzinfo.github.io
+    License: MIT
+    Installed at (0.3.41): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (0.3.40): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Daylight-savings aware timezone library
+
+uglifier (2.5.3, 2.1.1)
+    Author: Ville Lautanala
+    Homepage: http://github.com/lautis/uglifier
+    License: MIT
+    Installed at (2.5.3): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+                 (2.1.1): /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Ruby wrapper for UglifyJS JavaScript compressor
+
+websocket (1.0.7)
+    Author: Bernard Potocki
+    Homepage: http://github.com/imanel/websocket-ruby
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Universal Ruby library to handle WebSocket protocol
+
+xpath (2.0.0)
+    Author: Jonas Nicklas
+    Homepage: http://github.com/jnicklas/xpath
+    Installed at: /home/salexa/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0
+
+    Generate XPath expressions from Ruby

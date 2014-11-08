@@ -2,6 +2,7 @@
 Λειτουργία: Δημιουργία και Επισκόπηση Δεσμών(Bundles)
   
   Mockup: https://owncloud.ucyclubs.co/~ucyclubs/owncloud/public.php?service=files&t=032b95dbf6b5b87267be5b3375257f81
+  Edit mockup: http://whiteboardfox.com/25109-7596-5087
 
   Υπόβαθρο: Ο χρήστης είναι συνδεδεμένος
 

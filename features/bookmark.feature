@@ -1,8 +1,5 @@
 #language: el
 Λειτουργία: Εισαγωγή, Επεξεργασία. Επισκόπηση και εύρεση Σελιδοδεικτών
-
-  Mockup για φόρμα εισαγωγής στοιχείων σελιδοδείκτη:
-  https://owncloud.ucyclubs.co/~ucyclubs/owncloud/public.php?service=files&t=5dc38f24201f8ca3c7441559e7ef1c47
   
   Υπόβαθρο: Ο χρήστης είναι συνδεδεμένος
 

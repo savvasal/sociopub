@@ -1,14 +1,14 @@
 <%= form_for(:session, url: sessions_path) do |f| %>
 <li>
-<%= f.label :email %>
-<%= f.text_field :email %>
+<%= f.label :"Όνομα Χρήστη" %>
+<%= f.text_field :username %>
 </li>
 <li>
-<%= f.label :password %>
+<%= f.label :"Κωδικός Πρόσβασης" %>
 <%= f.password_field :password %>
 </li>
 <li>
-<%= f.submit "Sign in" %>
+<%= f.submit "Είσοδος" %>
 </li>
 
 <% end %>

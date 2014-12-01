@@ -10,8 +10,10 @@ class User < ActiveRecord::Base
     SecureRandom.urlsafe_base64
   end
 
-  def User.digest(token)
-    Digest::SHA1.hexdigest(token.to_s)
+  def User.digest(string)
+    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+      BCrypt::Engine.cost
+    BCrypt::Password.create(string, cost: cost)
   end
 
   private

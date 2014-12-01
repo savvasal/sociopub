@@ -4,13 +4,11 @@
       <%= link_to "SocioPub", '#', id: "logo" %>
       <nav>
 	<ul class="nav pull-right">
-          <% if signed_in? %>
-          <li><%= link_to "Users", '#' %></li>
-          <li><%= link_to "Profile", current_user %></li>
-          <li><%= link_to "Settings", '#' %></li>
-          <li>
-            <%= link_to "Sign out", signout_path, method: "delete" %>
-          </li>
+          <% if logged_in? %>
+          <%= link_to "Users", '#' %>
+          <%= link_to "Profile", current_user %>
+          <%= link_to "Settings", '#' %>
+          <%= link_to "Log out", logout_path, method: "delete" %>
           <% else %>	  
 	  <%= render 'sessions/new' %>
 	  <% end %>

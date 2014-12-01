@@ -1,10 +1,15 @@
 <%= form_for(:session, url: sessions_path) do |f| %>
-<%= f.label :"Όνομα Χρήστη" %>
-<%= f.label :"Κωδικός Πρόσβασης" %>
-<li>
-<%= f.text_field :username %>
-<%= f.password_field :password %>
-<%= f.submit "Είσοδος" %>
-</li>
+<table>
+  <tr>
+    <td> <%= f.label :"Όνομα Χρήστη" %> </td>
+    <td> <%= f.label :"Κωδικός Πρόσβασης" %> </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td> <%= f.text_field :username %></td>
+    <td><%= f.password_field :password %> </td>
+    <td><%= f.submit "Είσοδος" %></td>
+  </tr>
+</table>
 
 <% end %>

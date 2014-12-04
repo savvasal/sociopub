@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-Given /^ότι δημιουργήθηκε ένας νεός χρήστης$/ do
+#language: el
+
+Δεδομένου /^ότι δημιουργήθηκε ένας νεός χρήστης$/ do
   @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar" )
 end
 

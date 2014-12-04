@@ -11,11 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141202111349) do
+ActiveRecord::Schema.define(version: 20141204052935) do
 
   create_table "bookmark_user_relationships", force: true do |t|
     t.integer  "user_id"
     t.integer  "bookmark_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "bookmark_user_tag_relationships", force: true do |t|
+    t.integer  "bookmark_user_relationship_id"
+    t.integer  "tag_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -27,6 +34,26 @@ ActiveRecord::Schema.define(version: 20141202111349) do
   end
 
   create_table "bookmarktousers", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "feeds", force: true do |t|
+    t.string   "url"
+    t.string   "base_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_feed_subscriptions", force: true do |t|
+    t.integer  "feed_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

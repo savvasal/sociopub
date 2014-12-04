@@ -1,5 +1,11 @@
 class User < ActiveRecord::Base
+
   has_many :bookmark_user_relationships, foreign_key: "user_id"
+  has_many :bookmarks, through: :bookmark_user_relationships
+
+  has_many :user_feed_subscriptions, foreign_key: "user_id"
+  has_many :feeds, through: :user_feed_subscriptions
+
   attr_accessor :remember_token
   before_save { self.email = email.downcase }
   validates :name, presence: true, length: {maximum: 50}

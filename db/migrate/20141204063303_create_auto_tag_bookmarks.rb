@@ -1,6 +1,6 @@
-class CreateTagBookmarks < ActiveRecord::Migration
+class CreateAutoTagBookmarks < ActiveRecord::Migration
   def change
-    create_table :tag_bookmarks do |t|
+    create_table :auto_tag_bookmarks do |t|
       t.integer :tag_id
       t.integer :bookmark_id
 

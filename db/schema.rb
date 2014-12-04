@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141204052935) do
+ActiveRecord::Schema.define(version: 20141204074917) do
+
+  create_table "auto_tag_bookmarks", force: true do |t|
+    t.integer  "tag_id"
+    t.integer  "bookmark_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "bookmark_user_relationships", force: true do |t|
     t.integer  "user_id"
@@ -33,7 +40,46 @@ ActiveRecord::Schema.define(version: 20141204052935) do
     t.datetime "updated_at"
   end
 
+  create_table "bookmarks_feeds", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "bookmarktousers", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "bundle_feeds", force: true do |t|
+    t.integer  "feed_id"
+    t.integer  "bundle_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "bundle_tags", force: true do |t|
+    t.integer  "tag_id"
+    t.integer  "bundle_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "bundle_users", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "bundle_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "bundles", force: true do |t|
+    t.string   "definition"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "feed_bookmarks", force: true do |t|
+    t.integer  "feed_id"
+    t.integer  "bookmark_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

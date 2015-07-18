@@ -1,0 +1,14 @@
+<% provide(:title, "Help") %>
+<!DOCTYPE html>
+<html>
+  <head>
+<title><%= yield(:title) %> | Ruby on Rails sammple app</title>
+</head>
+<body>
+<h1><%= yield(:title) %> | Ruby on Rails sammple app</h1>
+<p>
+Get help on the Ruby on Rails Tutorial at the
+<a href="http://www.railstutorial.org/#help">Rails Tutorial help section</a>.
+</p>
+</body>
+</html>

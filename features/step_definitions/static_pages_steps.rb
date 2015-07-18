@@ -15,3 +15,7 @@ Then(/^I should see "([^"]*)" Page$/) do |arg1|
   expect(page).to have_content(arg1)
 #  response.should eq 200
 end
+
+Then(/^I should see "([^"]*)" on title$/) do |title|
+  expect(page).to have_title title
+end

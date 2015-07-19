@@ -1,0 +1,7 @@
+class FeedsController < ApplicationController
+  def new
+  end
+
+  def pull
+  end
+end

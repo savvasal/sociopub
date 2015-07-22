@@ -7,13 +7,13 @@ Then(/^I should see link to "([^"]*)" Page$/) do |hyperlink|
   # expect(page).to have_content(hyperlink)
 end
 
-When(/^I request to get "([^"]*)" Page$/) do |page|
+When(/^I click the link to "([^"]*)"$/) do |page|
   click_link(page)
 end
 
 Then(/^I should see "([^"]*)" Page$/) do |arg1|
   expect(page).to have_content(arg1)
-#  response.should eq 200
+  #  response.should eq 200
 end
 
 Then(/^I should see "([^"]*)" on title$/) do |title|

@@ -16,9 +16,6 @@ Feature: Static Pages
     When I visit application
     Then I should see link to "Contact" Page
 
-  Scenario: Link to Contact Page
-    When I visit application
-    Then I should see link to "Sign up" Page
     
   Scenario: Home Page Works
     When I visit application
@@ -44,10 +41,3 @@ Feature: Static Pages
     And I click the link to "Contact"
     Then I should see "Contact" Page
     And I should see "Contact | Sociopub, Your Personal Newsboy is delivering Everything for You" on title
-
-  Scenario: Sign Up Works
-    When I visit application
-    And I click the link to "Sign up now!"
-    Then I should see "Sign Up" Page
-    And I should see "Sign Up | Sociopub, Your Personal Newsboy is delivering Everything for You" on title
-

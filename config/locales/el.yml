@@ -1,0 +1,11 @@
+el:
+  activerecord:
+    models:
+      user: Χρήστη
+    attributes:
+      user:
+        name: "Όνομα Χρήστη"
+        email: "Ηλεκτρονική Διεύθυνση"
+        password: "Κωδικός"
+        password_confirmation: "Επανάληψη Κωδικού"
+        commit: "Εγγραφή"

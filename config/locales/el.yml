@@ -8,4 +8,6 @@ el:
         email: "Ηλεκτρονική Διεύθυνση"
         password: "Κωδικός"
         password_confirmation: "Επανάληψη Κωδικού"
-        commit: "Εγγραφή"
+  helpers:
+    submit:
+      create: "Εγγραφή"

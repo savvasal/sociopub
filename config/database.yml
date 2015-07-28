@@ -22,7 +22,13 @@ test: &test
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  # adding to check if it works with heroku
+  adapter: postgresql
+  host: ec2-54-83-18-87.compute-1.amazonaws.com
+  username:     pooidrxcallzox
+  database:     da2tnr3bvdb8dj
+  ## 
+#  database: db/production.sqlite3
 
 cucumber:
   <<: *test

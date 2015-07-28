@@ -129,3 +129,15 @@ end
 Τότε(/^να εμφανίζει μήνυμα ότι το όνομα που έχει δοθεί δεν είναι έγκυρο$/) do
   page.should have_content('Όνομα Χρήστη είναι άκυρο')
 end
+
+Δεδομένου(/^εμφανίζονται τα πεδία για είσοδο ως χρήστης$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Δεδομένου(/^έχω λογαριασμό με όνομα χρήστη "([^"]*)" και κωδικό "([^"]*)"$/) do |arg1, arg2|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Όταν(/^καταχωρήσω στο όνομα χρήστη "([^"]*)" και στο κωδικό "([^"]*)"$/) do |arg1, arg2|
+  pending # Write code here that turns the phrase above into concrete actions
+end

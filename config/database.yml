@@ -82,3 +82,10 @@ cucumber:
 #     url: <%= ENV['DATABASE_URL'] %>
   #
 
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: sociopub_production
+  pool: 5
+  username: sociopub
+  password:

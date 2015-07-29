@@ -82,11 +82,3 @@ cucumber:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 
-
-production:
-  host: ec2-54-83-18-87.compute-1.amazonaws.com
-  user: pooidrxcallzox
-  password:  czbdK9PKLd83LifCNzvqSTwoIr
-  database: da2tnr3bvdb8dj
-  port: 5432
-  url:  postgres://pooidrxcallzox:czbdK9PKLd83LifCNzvqSTwoIr@ec2-54-83-18-87.compute-1.amazonaws.com:5432/da2tnr3bvdb8dj

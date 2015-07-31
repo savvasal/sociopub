@@ -70,8 +70,8 @@ Rails.application.configure do
     address:              'box1048.bluehost.com',
     port:                 465,
     domain: 'savinos.org',
-    user_name:            'noreply@savinos.org',
-    password:             'Q4_uiM@[xbfh',
+    user_name:            ENV['EMAIL_USERNAME'],
+    password:             ENV['EMAIL_PASSWORD'],
     authentication:       'plain',
     ssl: true }
 

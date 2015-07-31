@@ -32,8 +32,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      log_in @user
-      flash[:success] = "Καλοσώρισες στην εφαρμοή sociopub!"
+      @user.send_activation_email
+      flash[:info] = "Τσιάκκαρε το email σου."
       redirect_to @user
     else
       render 'new'

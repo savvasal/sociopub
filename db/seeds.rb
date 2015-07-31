@@ -11,14 +11,18 @@ User.create!(name: "pcuzer",
              password:
                "foobar",
              password_confirmation: "foobar",
-             admin: true)
-99.times do |n|
+             admin: true,
+             activated: true,
+             activated_at: Time.zone.now)
+
+30.times do |n|
   name = Faker::Name.first_name
   email = "example-#{n+1}@sociopub.com"
   password = "password"
   User.create!(name: name,
                email: email,
-               password:
-                 password,
-               password_confirmation: password)
+               password: password,
+               password_confirmation: password,
+               activated: true,
+               activated_at:  Time.zone.now)
 end

@@ -50,6 +50,7 @@ gem 'rails-i18n', '4.0.4'
 
 gem 'pg'
 
+gem 'mail'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,0 +1,11 @@
+<% provide(:title, 'Όλα τα άρθρα') %>
+<h1>Όλα τα άρθρα</h1>
+<%= will_paginate %>
+<% @entries.each do |entry| %>
+<li>
+  <%= link_to entry.title, entry.url, :target => "_blank" %>
+</li>
+<% end %>
+</ul>
+
+<%= will_paginate%>

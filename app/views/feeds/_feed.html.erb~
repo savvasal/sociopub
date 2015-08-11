@@ -1,0 +1,5 @@
+<li>
+  <%= link_to feed.title, feed.url %>
+  | <%= link_to "Ανανέωση", edit_fetch_items_from_feed_url(feed.id) %>
+  | <%= link_to "Διαγραφή", feed, method: :delete %>
+</li>

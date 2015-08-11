@@ -1,9 +1,10 @@
 class SessionsController < ApplicationController
+  
   def new
   end
 
   def create
-    user = User.find_by(name: params[:session][:name])
+    user = User.find_by(username: params[:session][:username])
     if user && user.authenticate(params[:session][:password])
       if user.activated?
         log_in user
@@ -11,7 +12,7 @@ class SessionsController < ApplicationController
         redirect_back_or user
       else
         message = "Ο Λογαρισμός δεν είναι ενεργοποιημένος. "
-        message += "Τσιάκκαρε το email σου, πρέπει να σου ήρτε κάτι."
+        message += "Έλεγξε το ηλεκτρονικό σου ταχυδρομείο για ενεργοποίηση λογαριασμού."
         flash[:warning] = message
         redirect_to root_url
       end

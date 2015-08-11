@@ -1,13 +1,17 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <nav>
-      <%= link_to image_tag("sociopub.png", alt: "Sociopub logo", :height => "40%"), '/', id: "logo"%>
+      <%= link_to image_tag("sociopub.png", alt: "Sociopub logo", :height => "40%"), newspaper_path, id: "logo"%>
 
       <ul class="nav navbar-nav navbar-right">
+	<% if !logged_in? %>
 	<li><%= link_to "Αρχική", '/' %></li>
+	<% else %>
+	<li><%= link_to "Εφημερίδα", newspaper_path %></li>
+	<li><%= link_to "Συνδρομές", subscriptions_path %></li>
+	<% end %>
 	<li><%= link_to "Βοήθεια", 'help' %></li>
 	<% if logged_in? %>
-	<li><%= link_to "Χρήστες", users_path  %></li>
 	<li class="dropdown">
 	  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 	    Λογαριασμός<b class="caret"> </b>

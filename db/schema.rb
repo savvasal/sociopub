@@ -11,47 +11,61 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150731145338) do
+ActiveRecord::Schema.define(version: 20150810061054) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "feeds", force: :cascade do |t|
-    t.string   "url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "items", force: :cascade do |t|
-    t.string   "url"
+  create_table "entries", force: :cascade do |t|
     t.string   "title"
+    t.string   "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "microposts", force: :cascade do |t|
-    t.text     "content"
-    t.integer  "user_id"
+  create_table "feeds", force: :cascade do |t|
+    t.string   "title"
+    t.string   "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "sources", force: :cascade do |t|
+    t.integer  "entry_id"
+    t.integer  "feed_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "sources", ["entry_id", "feed_id"], name: "index_sources_on_entry_id_and_feed_id", unique: true, using: :btree
+  add_index "sources", ["feed_id"], name: "index_sources_on_feed_id", using: :btree
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "feed_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "subscriptions", ["user_id", "feed_id"], name: "index_subscriptions_on_user_id_and_feed_id", unique: true, using: :btree
+  add_index "subscriptions", ["user_id"], name: "index_subscriptions_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
+    t.string   "username"
     t.string   "email"
     t.datetime "created_at",                        null: false
     t.datetime "updated_at",                        null: false
-    t.string   "password_digest"
     t.string   "remember_digest"
     t.boolean  "admin",             default: false
     t.string   "activation_digest"
-    t.boolean  "activated"
+    t.boolean  "activated",         default: false
     t.datetime "activated_at"
     t.string   "reset_digest"
     t.string   "string"
     t.datetime "reset_sent_at"
+    t.string   "password_digest"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
 end

@@ -1,0 +1,12 @@
+<%= form_for(:subscription, url: subscriptions_path) do |f| %>
+
+<div class="field">
+  <%= f.label :url %><br>
+  <%= f.text_field :url, class: 'form-control' %>
+</div>
+
+<div class="actions">
+  <%= f.submit "Εγγραφή", class: "btn btn-primary"%>
+</div>
+
+<% end %>

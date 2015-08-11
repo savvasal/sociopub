@@ -1,12 +1,10 @@
 <% provide(:title, "Εξίασα το κωδικό")%>
-<h1> Εξίασα το κωδικό </h1>
-
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(:password_reset, url: password_resets_path) do |f| %>
-    <%= f.label :email %>
+    <%= f.label :email, "Ηλεκτρονική Διεύθυνση" %>
     <%= f.email_field :email, class: 'form-control' %>
-    <%= f.submit "Submit", class: "btn btn-primary" %>
+    <%= f.submit "Επαναφορά", class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>

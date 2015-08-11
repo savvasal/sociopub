@@ -10,12 +10,5 @@ class ApplicationController < ActionController::Base
                   I18n.default_locale
   end
   
-  def hello
-    render text: "hello, world!"
-  end
-
-  def bye
-    render text: "bye bye , world!"
-  end
 
 end

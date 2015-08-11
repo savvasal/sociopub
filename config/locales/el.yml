@@ -4,10 +4,17 @@ el:
       user: Χρήστη
     attributes:
       user:
-        name: "Όνομα Χρήστη"
+        username: "Όνομα Χρήστη"
         email: "Ηλεκτρονική Διεύθυνση"
         password: "Κωδικός"
         password_confirmation: "Επανάληψη Κωδικού"
+        delete: "Διαγραφή"
+      feed:
+        title: "Τίτλος"
+        url: "Υπερσύνδεσμος"
   helpers:
     submit:
       create: "Εγγραφή"
+  will_paginate:
+    next_label: "Επόμενη φύλλο"
+    previous_label: "Προηγούμενο φύλλο"

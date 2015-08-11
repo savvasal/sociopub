@@ -11,10 +11,10 @@ class PasswordResetsController < ApplicationController
     if @user
       @user.create_reset_digest
       @user.send_password_reset_email
-      flash[:info] = "Email sent with password reset instructions"
+      flash[:info] = "Αποστάληκε η-μήνυμα με οδηγίες για επαναφορά κωδικού"
       redirect_to root_url
     else
-      flash.now[:danger] = "Email address not found"
+      flash.now[:danger] = "Η ηλεκτρονική διεύθυνση δεν βρέθηκε"
       render 'new'
     end
   end
@@ -39,7 +39,7 @@ class PasswordResetsController < ApplicationController
   # Checks expiration of reset token
   def check_expiration
     if @user.password_reset_expired?
-      flash[:danger] = "Password reset has expired."
+      flash[:danger] = "Η επαναφορά κωδικού έχει λήξει."
       redirect_to new_password_reset_url
     end
   end

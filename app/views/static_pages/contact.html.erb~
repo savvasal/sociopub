@@ -1,6 +1,2 @@
-<% provide(:title, 'Contact') %>
-<h1>Contact</h1>
-<p>
-  Contact me
-  <a href="http://www.cs.ucy.ac.cy/~salexa03/#contact">here</a>.
-</p>
+<h1>StaticPages#contact</h1>
+<p>Find me in app/views/static_pages/contact.html.erb</p>

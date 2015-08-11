@@ -1,2 +1,19 @@
-<h1>Feeds#new</h1>
-<p>Find me in app/views/feeds/new.html.erb</p>
+<% provide(:title, "Νέα ροή") %>
+<h1><%= yield(:title)%></h1>
+
+<%= form_for(@feed) do |f| %>
+<%= render 'shared/error_feeds'%>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Προσθήκη", class: "btn btn-primary"%>
+  </div>
+  <% end %>
+
+

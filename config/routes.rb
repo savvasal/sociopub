@@ -1,13 +1,33 @@
-Sociopub::Application.routes.draw do
-  root  'static_pages#home'
-  get    'signup'  => 'users#new'
-  get    'login'   => 'sessions#new'
-  post   'login'   => 'sessions#create'
-  delete 'logout'  => 'sessions#destroy'
+Rails.application.routes.draw do
 
+  root 'static_pages#home'
+  
+  get 'subscribe' => 'subscriptions#index'
+  post 'subscribe' => 'subscriptions#create'
+  delete 'usubscribe' => 'subscriptions#destroy'
+
+  get 'newspaper' => 'newspaper#index'
+  
+  get 'help' => 'static_pages#help'
+  get 'contact' => 'static_pages#contact'
+  get 'about' => 'static_pages#about'
+  get 'signup' => 'users#new'
+  get 'feeds' => 'feeds#index'
+  get 'add' => 'feeds#new'
+  
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+  
+  get 'entries' => 'entries#index'
+  
+  resources :subscriptions
   resources :users
-  resources :sessions, only: [:new, :create, :destroy]
-
+  resources :account_activations, only: [:edit]
+  resources :password_resets, only: [:new, :create, :edit, :update]
+  resources :feeds
+  resources :fetch_items_from_feed, only: [:edit]
+  resources :entries
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,9 @@
+<% provide(:title, 'Όλη η παρέα') %>
+<h1>Όλοι</h1>
+<%= will_paginate%>
+<% @users.each do |user| %>
+<%= render user %>
+<% end %>
+</ul>
+
+<%= will_paginate%>

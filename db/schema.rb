@@ -11,108 +11,61 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141204074917) do
+ActiveRecord::Schema.define(version: 20150810061054) do
 
-  create_table "auto_tag_bookmarks", force: true do |t|
-    t.integer  "tag_id"
-    t.integer  "bookmark_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
-  create_table "bookmark_user_relationships", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "bookmark_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "bookmark_user_tag_relationships", force: true do |t|
-    t.integer  "bookmark_user_relationship_id"
-    t.integer  "tag_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "bookmarks", force: true do |t|
+  create_table "entries", force: :cascade do |t|
+    t.string   "title"
     t.string   "url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "bookmarks_feeds", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "bookmarktousers", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "bundle_feeds", force: true do |t|
-    t.integer  "feed_id"
-    t.integer  "bundle_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "bundle_tags", force: true do |t|
-    t.integer  "tag_id"
-    t.integer  "bundle_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "bundle_users", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "bundle_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "bundles", force: true do |t|
-    t.string   "definition"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "feed_bookmarks", force: true do |t|
-    t.integer  "feed_id"
-    t.integer  "bookmark_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "feeds", force: true do |t|
+  create_table "feeds", force: :cascade do |t|
+    t.string   "title"
     t.string   "url"
-    t.string   "base_url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "tags", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "user_feed_subscriptions", force: true do |t|
+  create_table "sources", force: :cascade do |t|
+    t.integer  "entry_id"
     t.integer  "feed_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: true do |t|
-    t.string   "name"
+  add_index "sources", ["entry_id", "feed_id"], name: "index_sources_on_entry_id_and_feed_id", unique: true, using: :btree
+  add_index "sources", ["feed_id"], name: "index_sources_on_feed_id", using: :btree
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "feed_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "subscriptions", ["user_id", "feed_id"], name: "index_subscriptions_on_user_id_and_feed_id", unique: true, using: :btree
+  add_index "subscriptions", ["user_id"], name: "index_subscriptions_on_user_id", using: :btree
+
+  create_table "users", force: :cascade do |t|
+    t.string   "username"
     t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "password_digest"
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
     t.string   "remember_digest"
+    t.boolean  "admin",             default: false
+    t.string   "activation_digest"
+    t.boolean  "activated",         default: false
+    t.datetime "activated_at"
+    t.string   "reset_digest"
+    t.string   "string"
+    t.datetime "reset_sent_at"
+    t.string   "password_digest"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
 end

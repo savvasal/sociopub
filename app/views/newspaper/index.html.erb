@@ -1,0 +1,13 @@
+<% provide(:title, 'Εφημερίδα') %>
+<h2> Επιλεγμένα Άρθρα </h2>
+
+<%= will_paginate %>
+
+<% @newspaper.each do |entry| %>
+<li>
+  <%= link_to entry.title, entry.url, :target => "_blank" %> 
+</li>
+<% end %>
+</ul>
+
+<%= will_paginate%>

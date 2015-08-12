@@ -16,5 +16,5 @@ el:
     submit:
       create: "Εγγραφή"
   will_paginate:
-    next_label: "Επόμενη φύλλο"
+    next_label: "Επόμενο φύλλο"
     previous_label: "Προηγούμενο φύλλο"

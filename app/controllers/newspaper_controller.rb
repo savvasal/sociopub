@@ -8,8 +8,8 @@ class NewspaperController < ApplicationController
       @ary << feed.id
     end
 
-    @newspaper = Entry.joins(:sources).where(sources: {feed_id: @ary})
-    @newspaper = Entry.paginate(page: params[:page])
+    @newspaper = Entry.joins(:sources).where(sources: {feed_id: @ary}).paginate(page: params[:page])
+    # @newspaper = @newspaper.paginate(page: params[:page])
     # Κάνει ερώτημα από τα sources να πάρει τα entries που ανήκουν στα feeds του user
     # get_entries = current_user.my_entries
   end

@@ -4,7 +4,7 @@ el:
       user: Χρήστη
     attributes:
       user:
-        username: "Όνομα Χρήστη"
+        username: "Ψευδώνυμο"
         email: "Ηλεκτρονική Διεύθυνση"
         password: "Κωδικός"
         password_confirmation: "Επανάληψη Κωδικού"

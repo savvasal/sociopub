@@ -1,16 +1,21 @@
 <% provide(:title, "Σχετικά")%>
 <body>
+  <h1><%= yield(:title)%></h1>
   <p>
-    Η εφαρμογή <em>Sociopub</em> ξεκίνησε στα πλαίσια πτυχιακής εργασίας από το Σάββα Αλεξάνδρου, Προπτυχιακό Φοιτητή του Τμήματος Πληροφορικής Πανεπιστημίου Κύπρου με τη καθοδήγηση του καθηγητή Μάριου Δικαιάκου και του μεταπτυχιακού φοιτητή Αθανάσιου Φουδούλη.
-    <br>
-    Credits:
-    <br>
-    The project is implemented in Cyprus Community Media Center for feedback and testing purpose.
-    <br><br>
-    Links,Books:
-    <li>https://www.railstutorial.org/book</li>
-    <li>https://pragprog.com/book/hwcuc/the-cucumber-book</li>
-    <li>http://www.saasbook.info/</li>
-    <li>http://teotti.com/component-based-rails-architecture-primer/</li>
+    Η εφαρμογή <em>Sociopub</em> ξεκίνησε στα πλαίσια πτυχιακής εργασίας από το <%= link_to "Σάββα Αλεξάνδρου", "http://www.savinos.org/", :target => "_blank"%>, Προπτυχιακό Φοιτητή του <%= link_to "Τμήματος Πληροφορικής Πανεπιστημίου Κύπρου", "http://www.cs.ucy.ac.cy/", :target => "_blank" %>  με τη καθοδήγηση του καθηγητή <%= link_to  "Μάριου Δικαιάκου", "http://www.cs.ucy.ac.cy/~mdd/", :target => "_blank" %> και του μεταπτυχιακού φοιτητή <%= link_to "Αθανάσιου Φουδούλη", "http://linc.ucy.ac.cy/index.php/people/userprofile/thanasis", :target => "_blank"%>.
+  </p>
+  <p>
+    Ευχαριστίες:
+    <ul>
+      <li><%= link_to "Cyprus Community Media Center", "http://cypruscommunitymedia.org/", :target => "_blank"%></li>
+    </ul>
+  </p>
+  <p>
+    Πηγές:
+    <ul>
+      <li><%= link_to "Ruby on Rails Tutorial", "https://www.railstutorial.org/book/", :target => "_blank"%></li>
+      <li><%= link_to "The Cucumber Book: Behaviour-Driven Development for Testers and Developers", "https://pragprog.com/book/hwcuc/the-cucumber-book", :target => "_blank"%></li>
+      <li><%= link_to "Engineering Software as a Service: An Agile Approach Using Cloud Computing", "http://www.saasbook.info/", :target => "_blank"%></li>
+    </ul>
   </p>
 </body>

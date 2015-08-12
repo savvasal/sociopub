@@ -5,6 +5,7 @@ class SubscriptionsController < ApplicationController
     # @subscriptions = Subscription.paginate(page: params[:page])
     # @feed = Feed.new
     # @subscription = Subscription.new
+    @feeds = Feed.paginate(page: params[:page])
   end
   
   def show

@@ -6,7 +6,7 @@ class NewspaperController < ApplicationController
     current_user.my_subscriptions.each do |feed|
       feed.fetch
       @ary << feed.id
-    end
+      end
 
     @newspaper = Entry.joins(:sources).where(sources: {feed_id: @ary}).paginate(page: params[:page])
     # @newspaper = @newspaper.paginate(page: params[:page])

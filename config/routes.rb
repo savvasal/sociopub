@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   post 'subscribe' => 'subscriptions#create'
   delete 'usubscribe' => 'subscriptions#destroy'
 
+  get 'contact' => 'static_pages#contact'
+  get 'ideas' => 'static_pages#ideas'
+
   get 'newspaper' => 'newspaper#index'
   
   get 'help' => 'static_pages#help'

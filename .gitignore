@@ -18,7 +18,7 @@
 database.yml
 doc/
 *.swp
-
+ 
 .project
 .DS_Store  
 .idea

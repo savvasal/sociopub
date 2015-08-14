@@ -1,0 +1,12 @@
+<% provide(:title, "Επικοινωνία") %>
+<body>
+  <h1><%= yield(:title) %></h1>
+  <p>
+    Για οτιδήποτε χρειαστείς για την εφαρμογή μπορεί να επικοινωνήσεις μαζί μας 
+  <ul>
+    <li>μέσω chat στο <%= link_to "##sociopub", "http://webchat.freenode.net/?channels=##sociopub", :target => "_blank"%></li>
+    
+    <li>μέσω  <%= mail_to "sociopub@gmail.com", "email" %></li>
+  </ul>
+</p>
+</body>

@@ -7,12 +7,15 @@ class User < ActiveRecord::Base
 
   has_many :subscriptions, dependent: :destroy
   has_many :feeds, through: :subscriptions
-  
+
+  # \w+\-. για να παίρνει τελεία και παύλα
   VALID_USERNAME_REGEX = /\A\p{Alnum}+\z/
   validates :username, presence: true, uniqueness: true,
             format: { with: VALID_USERNAME_REGEX },
             length: {maximum:20 }
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]*\.[a-z]+\z/i
+  
+  # valid email address according to https://tools.ietf.org/html/rfc3696#section-3 - need fix
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[\w\-\.]+\w+\z/i
   validates :email, presence: true,
             format: { with: VALID_EMAIL_REGEX },
             uniqueness: {case_sensitive: false}

@@ -10,13 +10,13 @@ class FeedsController < ApplicationController
 
   def create
     # να παίρνει το τίτλο από την πηγή
-    @feed = Feed.new(feed_params)
-    if @feed.save
-      flash[:info] = "Η ροή καταχωρήθηκε με επιτυχία."
-      redirect_to feeds_path
-    else
-      render 'new'
-    end
+    # @feed = Feed.new(feed_params)
+    # if @feed.save
+    #  flash[:info] = "Η ροή καταχωρήθηκε με επιτυχία."
+    #  redirect_to feeds_path
+    #else
+    #  render 'new'
+    #end
   end
 
   def destroy

@@ -61,8 +61,9 @@ end
 
 group :test do
   gem 'cucumber-rails', '1.4.0', :require => false
-  gem 'capybara-email', '2.4.0'
+  #  gem 'capybara-email', '2.4.0'
   gem 'email_spec', '1.6.0'
+  gem 'action_mailer_cache_delivery', '0.3.7'
   gem 'show_me_the_cookies', '3.0.0'
   gem 'rspec-rails', '2.11.0'
   gem 'database_cleaner', '~> 1.2.0'

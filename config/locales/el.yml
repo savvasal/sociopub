@@ -5,13 +5,15 @@ el:
     attributes:
       user:
         username: "Ψευδώνυμο"
-        email: "Ηλεκτρονική Διεύθυνση"
+        email: "Η-Διεύθυνση"
         password: "Κωδικός"
         password_confirmation: "Επανάληψη Κωδικού"
         delete: "Διαγραφή"
       feed:
         title: "Τίτλος"
         url: "Υπερσύνδεσμος"
+  errors:
+    format: "Το πεδίο %{attribute} %{message}"
   helpers:
     submit:
       create: "Εγγραφή"

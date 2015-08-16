@@ -23,7 +23,7 @@ Rails.application.configure do
     port:                 465,
     domain: 'savinos.org',
     user_name:            'noreply@savinos.org',
-    password:              ENV["SOCIOPUB_EMAIL_PASSWORD"],
+    password:           ENV["SOCIOPUB_EMAIL_PASSWORD"],
     authentication:       'plain',
     ssl: true }
   

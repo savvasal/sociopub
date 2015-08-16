@@ -24,7 +24,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       @user.send_activation_email
-      flash[:info] = "Ελέγξτε το ηλεκτρονικό σας ταχυδρομείο."
+      flash[:info] = "Η εγγραφή έγινε με επιτυχία. Ελέγξτε το η-ταχυδρομείο σας για επαλήθευση."
       redirect_to @user
     else
       render 'new'

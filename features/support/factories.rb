@@ -17,6 +17,16 @@ FactoryGirl.define do
     f.activated 'true'
   end
 
+  factory :ted, class: User do |f|
+    f.username 'ted'
+    f.email 'ted@sociopub.com'
+    f.password 'database'
+    f.password_confirmation 'database'
+    f.activated 'true'
+    f.admin 'true'
+  end
+
+
   factory :authenticated_user, class: User do |f|
     f.username 'authenticated'
     f.email 'authenticated@email.com'
@@ -25,14 +35,6 @@ FactoryGirl.define do
     f.activated 'true'
   end
 
-  factory :admin, class: User do |f|
-    f.username 'admin'
-    f.email 'admin@email.com'
-    f.password 'password'
-    f.password_confirmation 'password'
-    f.activated 'true'
-    f.admin 'true'
-  end
 
 
 end

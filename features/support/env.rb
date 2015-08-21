@@ -7,6 +7,7 @@
 require 'cucumber/rails'
 require 'email_spec'
 require 'email_spec/cucumber'
+# require 'capybara-screenshot/cucumber'
 
 World(ShowMeTheCookies)
 

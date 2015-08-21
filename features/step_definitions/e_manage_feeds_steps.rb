@@ -1,5 +1,5 @@
 Δεδομένου(/^ότι επισκέπτομαι την εφαρμογή ως Διαχειριστής$/) do
-  alan = FactoryGirl.create(:alan)
+  alan = FactoryGirl.create(:ted)
   visit login_path
   fill_in('session_username', :with => "ted")
   fill_in('session_password', :with => "database")
@@ -7,7 +7,12 @@
 end
 
 
-Τότε(/^εμφανίζεται υπερσύνδεσμος για επεξεργασία πηγής$/) do
+Τότε(/^εμφανίζεται υπερσύνδεσμος για επεξεργασία πηγής δίπλα από κάθε πηγή$/) do
+  # Το πιο κάτω ενοείται
+  # Ήταν καλύτερα να γίνεται με factory girl
+  url = "http://www.paideia-news.com/rss/news.xml"
+  fill_in('subscription_url', :with => url)
+  click_button('Εγγραφή')
   page.should have_content("Επεξεργασία")
 end
 
@@ -16,7 +21,7 @@ end
 end
 
 Όταν(/^αλλάζω το τίτλο$/) do
-  fill_in('feed_title', :with => NewTitle)  
+  fill_in('feed_title', :with => "NewTitle")  
 end
 
 Όταν(/^ζητώ να αποθηκευτούν οι αλλαγές$/) do

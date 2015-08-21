@@ -19,6 +19,21 @@ class FeedsController < ApplicationController
     #end
   end
 
+  def edit
+    @feed = Feed.find(params[:id])
+  end
+  
+  def update
+    @feed = Feed.find(params[:id])
+    if @feed.update_attributes(feed_params)
+      flash[:success] = "η Αλλαγή έχει γίνει με επιτυχία"
+      redirect_to subscriptions_path
+    else
+      render 'edit'
+    end
+  end
+
+
   def destroy
     #  Feed.find(params[:id]).destroy
     #  flash[:success] = "Ο ροή διαγράφηκε"

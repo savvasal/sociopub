@@ -1,0 +1,14 @@
+<% provide(:title, "Επεξεργασία Ροής") %>
+<h1>Ανανέωση πληροφοριών ροής</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@feed) do |f| %>
+    <%= render 'shared/error_feeds' %>
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+    <%= f.label :url %>
+    <%= f.text_field :url, class: 'form-control' %>
+    <%= f.submit "Αποθήκευση", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

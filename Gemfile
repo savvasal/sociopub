@@ -72,6 +72,8 @@ group :test do
   gem 'mini_backtrace', '0.1.3'
   gem 'guard-minitest', '2.3.1'
   gem 'sqlite3', '1.3.10'
+  gem 'selenium-webdriver', '2.47.1'
+  # gem 'capybara-screenshot'
 end
 
 

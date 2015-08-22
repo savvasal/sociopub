@@ -14,12 +14,11 @@ gem 'rails-i18n', '4.0.4'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'sprockets', '3.3.2'
 
 gem 'bootstrap-sass', '3.3.5'
 gem 'will_paginate', '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
-
-gem 'sprockets', '~> 3.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

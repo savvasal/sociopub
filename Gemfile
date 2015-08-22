@@ -14,7 +14,6 @@ gem 'rails-i18n', '4.0.4'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-gem 'sprockets', '3.3.2'
 
 gem 'bootstrap-sass', '3.3.5'
 gem 'will_paginate', '3.0.7'

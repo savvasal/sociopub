@@ -1,4 +1,5 @@
 class NewspaperController < ApplicationController
+  require "addressable/uri"
   def index
     # Όταν αφαιρέσω συνδρομή δεν φέρνει πάλι τα άρθρα της
     @ary = Array.new

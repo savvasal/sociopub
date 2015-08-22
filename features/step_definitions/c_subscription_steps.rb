@@ -6,16 +6,16 @@
   click_button("Είσοδος")
 end
 
-Δεδομένου(/^ζητώ να διαχειριστώ τις συνδρομές μου$/) do
-  visit subscriptions_path
-end
-
 Δεδομένου(/^είμαι εγγεγραμένος στη ροή (.*) με υπερσύνδεσμο (.*)$/) do |title, url|
+  # ο τίτλος λαμβάνεται σαν παράμετρος αλλά δεν χρησιμοποιείται
+  # είναι καλό να αλλαχτεί
+  visit subscriptions_path
   fill_in('subscription_url', :with => url)
   click_button('Εγγραφή')
 end
 
 Δεδομένου(/^δεν είμαι εγγεγραμένος στη ροή (.*) με υπερσύνδεσμο (.*)$/) do |title, url|
+  visit subscriptions_path
   fill_in('subscription_url', :with => url)
   click_button('Εγγραφή')
   click_link('Διαγραφή')

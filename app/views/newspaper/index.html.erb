@@ -2,11 +2,13 @@
 <h2> Επιλεγμένα Άρθρα </h2>
 
 <%= will_paginate %>
-
+<ul>
 <% @newspaper.each do |entry| %>
 <li>
+  <article>
   <%= link_to entry.title, entry.url, :target => "_blank" %> |
   <%= Addressable::URI.parse(entry.url).host%>
+  </article>
 </li>
 <% end %>
 </ul>

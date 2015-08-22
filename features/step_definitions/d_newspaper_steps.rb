@@ -16,3 +16,9 @@ end
   # Σίγουρα κάτι καλύτερο
   page.should have_content("guardian")
 end
+
+
+Τότε(/^να εμφανίζονται μόνο (\d+) άρθρα$/) do |count|
+  #νοουμένου ότι η συγκεκρυμένη πηγή έχει πάνω από 9 άρθρα
+  expect(page).to have_css("article", count: count.to_i)
+end

@@ -34,5 +34,5 @@ end
 end
 
 Όταν(/^επισυμαίνω τη ροή ως συμμβατή$/) do
-  check('Συμβατή')
+  check('feed_compatible')
 end

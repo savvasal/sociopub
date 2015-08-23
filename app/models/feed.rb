@@ -25,6 +25,13 @@ class Feed < ActiveRecord::Base
     end
   end
 
+#  def compatible
+#  update_attribute(:compatible, "true")
+#  end
+
+#  def incompatible
+#    update_attribute(:compatible, "false")
+#  end
   
 
   

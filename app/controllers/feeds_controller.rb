@@ -51,7 +51,7 @@ class FeedsController < ApplicationController
   private
 
   def feed_params
-    params.require(:feed).permit(:title, :url)
+    params.require(:feed).permit(:title, :url, :compatible)
   end
 
 end

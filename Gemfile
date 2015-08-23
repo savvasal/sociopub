@@ -11,8 +11,9 @@ gem 'feedjira'
 gem 'rails-i18n', '4.0.4'
 
 # Use postgresql as the database for Active Record
-gem 'pg'
-# Use SCSS for stylesheets
+gem 'pg', '~> 0.18.2'
+
+# Use SCSS for stylesheetsf
 gem 'sass-rails', '~> 5.0'
 
 gem 'bootstrap-sass', '3.3.5'
@@ -45,7 +46,27 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'addressable'
+# Use addresable to extract the domain from a given url
+gem 'addressable', '2.3.8'
+
+# Use nokogiri to parse and read articles
+gem 'nokogiri', '1.6.6.2'
+
+#gem 'mechanize', '2.7.3'
+gem 'pismo', '0.7.4'
+
+#gem 'stopwords-filter', '0.3.1'
+
+#gem 'similarity', '0.2.5'
+#gem 'gsl', '1.16.0.6'
+
+# gem 'rubyzip', '~> 1.1.7'
+#gem 'zip', '~> 2.0.2'
+#gem 'birch', :github => 'faustoct/birch'
+# gem 'schiphol', '~> 0.9.4'
+#gem 'treat', '2.1.0'
+#gem 'ruby-readability', '~> 0.7.0'
+#gem 'fastimage', '~> 1.7.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -57,9 +78,10 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  
+  # Use fake to generate fake data in database
   gem 'faker', '1.4.2'
 
+  # Use rails-erd to extract erd from schema - db
   gem 'rails-erd'
 end
 

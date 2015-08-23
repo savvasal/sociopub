@@ -7,8 +7,8 @@ class NewspaperController < ApplicationController
     current_user.my_subscriptions.each do |feed|
       feed.fetch
       @ary << feed.id
-      end
-
+    end
+    
     @newspaper = Entry.joins(:sources).where(sources: {feed_id: @ary}).paginate(page: params[:page], :per_page => 9)
     # @newspaper = @newspaper.paginate(page: params[:page])
     # Κάνει ερώτημα από τα sources να πάρει τα entries που ανήκουν στα feeds του user

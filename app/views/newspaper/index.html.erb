@@ -6,8 +6,12 @@
 <% @newspaper.each do |entry| %>
 <li>
   <article>
-  <%= link_to entry.title, entry.url, :target => "_blank" %> |
-  <%= Addressable::URI.parse(entry.url).host%>
+    <%= link_to entry.title, entry.url, :target => "_blank" %>
+    | <% entry.keywords.each do |tag|  %>
+    #<%= tag %> 
+    <% end %>
+    | <%= Addressable::URI.parse(entry.url).host%>
+    
   </article>
 </li>
 <% end %>

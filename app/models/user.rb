@@ -39,7 +39,7 @@ class User < ActiveRecord::Base
   end
 
   def my_subscriptions
-    Feed.joins(:subscriptions).where(subscriptions: {user_id: self.id})
+    Feed.joins(:subscriptions).where(subscriptions: {user_id: self.id}).where(feeds: {compatible: "true"})
   end
 
   # Βγάζει και πηγές που ανήκουν στο χρήστη 
@@ -91,7 +91,7 @@ class User < ActiveRecord::Base
 
   # Returns true if a password reset has expired.
   def password_reset_expired?
-      reset_sent_at < 2.hours.ago
+    reset_sent_at < 2.hours.ago
   end
   
   private

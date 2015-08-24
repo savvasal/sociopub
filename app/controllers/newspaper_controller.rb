@@ -5,6 +5,7 @@ class NewspaperController < ApplicationController
     @ary = Array.new
     # Παίρνει τα feeds από τα subscriptions
     current_user.my_subscriptions.each do |feed|
+      # αν μπορεί να αλλάξει κάπως να μεν τα πιάνει συνέχεια
       feed.fetch
       @ary << feed.id
     end

@@ -68,6 +68,10 @@ gem 'pismo', '0.7.4'
 #gem 'ruby-readability', '~> 0.7.0'
 #gem 'fastimage', '~> 1.7.0'
 
+gem 'rack-mini-profiler', require: false
+gem 'flamegraph', '~> 0.1.0'
+gem 'stackprof', '~> 0.2.7'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -83,6 +87,9 @@ group :development, :test do
 
   # Use rails-erd to extract erd from schema - db
   gem 'rails-erd'
+
+
+  gem 'meta_request'
 end
 
 group :test do

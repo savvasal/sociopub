@@ -16,11 +16,13 @@ class Feed < ActiveRecord::Base
     # τραβά τα άρθρα από τη πηγή και τα καταχωρεί στη βάση
     xml = Feedjira::Feed.fetch_and_parse self.url
     xml.entries.each do |e|
+      # aprox 2 ms each
       item = Entry.find_or_initialize_by(url: e.url)
       if item.new_record?
         item.title = e.title
         item.save
       end
+      # aprox 2-5ms each
       Source.find_or_create_by(feed_id: self.id, entry_id: item.id)
     end
   end

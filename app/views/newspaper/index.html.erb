@@ -1,15 +1,17 @@
+
 <% provide(:title, 'Εφημερίδα') %>
 <h2> Επιλεγμένα Άρθρα </h2>
 
+<!-- aprox 5ms-->
 <%= will_paginate %>
 <ul>
 <% @newspaper.each do |entry| %>
 <li>
   <article>
     <%= link_to entry.title, entry.url, :target => "_blank" %>
-    | <% entry.keywords.each do |tag|  %>
-    #<%= tag %> 
-    <% end %>
+    | <!--% entry.keywords.each do |tag|  %-->
+    #<!--%= tag %--> 
+    <!--% end %-->
     | <%= Addressable::URI.parse(entry.url).host%>
     
   </article>

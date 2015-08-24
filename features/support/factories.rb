@@ -27,13 +27,11 @@ FactoryGirl.define do
   end
 
 
-  factory :authenticated_user, class: User do |f|
-    f.username 'authenticated'
-    f.email 'authenticated@email.com'
-    f.password 'password'
-    f.password_confirmation 'password'
-    f.activated 'true'
-  end
+  #factory :guardian, class: Feed do |f|
+  #  f.title 'authenticated'
+  #  f.url 'authenticated@email.com'
+  #  f.passwor 'password'
+  # end
 
 
 

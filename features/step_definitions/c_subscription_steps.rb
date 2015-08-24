@@ -9,6 +9,7 @@ end
 Δεδομένου(/^είμαι εγγεγραμένος στη ροή (.*) με υπερσύνδεσμο (.*)$/) do |title, url|
   # ο τίτλος λαμβάνεται σαν παράμετρος αλλά δεν χρησιμοποιείται
   # είναι καλό να αλλαχτεί
+  # με factory girl
   visit subscriptions_path
   fill_in('subscription_url', :with => url)
   click_button('Εγγραφή')

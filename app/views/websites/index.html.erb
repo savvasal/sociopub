@@ -1,0 +1,17 @@
+<% provide(:title, 'Όλες οι σελίδες') %>
+<h1></h1>
+<%= will_paginate%>
+<% @websites.each do |site| %>
+<li>
+  <!--το πιο κάτω μπορεί να μπει σε ξεχωριστή συνάρτηση -->
+  <%= site.url.sub(/^https?\:\/\//, '').sub(/^www./,'').chop %> |
+  <% if site.compatible? %>
+  <%= link_to "Επισήμανση ως Μη Συμβατή",  websites_path(:id => site.id, :compatible => false ), method: :put %>
+  <% else %>
+  <%= link_to "Επισήμανση ως Συμβατή", websites_path(:id => site.id, :compatible => true ), method: :put  %>
+  <% end %>
+</li>
+<% end %>
+</ul>
+
+<%= will_paginate%>

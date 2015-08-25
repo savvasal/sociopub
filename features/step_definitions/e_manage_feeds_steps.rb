@@ -1,4 +1,4 @@
-Δεδομένου(/^ότι επισκέπτομαι την εφαρμογή ως Διαχειριστής$/) do
+Δεδομένου(/^ότι εισέρχομαι στην εφαρμογή ως Διαχειριστής$/) do
   alan = FactoryGirl.create(:ted)
   visit login_path
   fill_in('session_username', :with => "ted")

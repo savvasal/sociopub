@@ -23,6 +23,7 @@ class SubscriptionsController < ApplicationController
       # Κανονικά πρέπει να πάει στο create feed για να εφαρμόζεται το validate
       feed = Feed.find_or_initialize_by(url: params[:subscription][:url])
       if feed.new_record?
+        # δαμέ αρκεί - αφού κάμει τη δουλειά μπορεί να τα φυλάει και για μετά
         xml = Feedjira::Feed.fetch_and_parse params[:subscription][:url] 
         feed.title = xml.title 
         feed.save

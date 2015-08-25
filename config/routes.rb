@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   root 'static_pages#home'
   
   get 'subscribe' => 'subscriptions#index'
@@ -25,7 +26,12 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   
   get 'entries' => 'entries#index'
+
+
+  get 'websites' => 'websites#index'
+  put 'websites' => 'websites#update'
   
+  resources :websites
   resources :subscriptions
   resources :users
   resources :account_activations, only: [:edit]

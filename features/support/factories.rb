@@ -1,6 +1,8 @@
 require 'factory_girl'
 
 FactoryGirl.define do
+
+  # merge them in one class and overwrite them - like subscribe
   
   factory :ada, class: User do |f|
     f.username 'ada'
@@ -26,14 +28,33 @@ FactoryGirl.define do
     f.admin 'true'
   end
 
+  # merge them in one class and overwrite them - like the following one
 
-  #factory :guardian, class: Feed do |f|
-  #  f.title 'authenticated'
-  #  f.url 'authenticated@email.com'
-  #  f.passwor 'password'
-  # end
+  factory :theguardian, class: Feed do |f|
+    f.title 'The Guardian'
+    f.url 'http://www.theguardian.com/uk/rss'
+  end
+  
+  factory :wired, class: Feed do |f|
+    f.title 'Wired'
+    f.url 'http://www.wired.co.uk/news/rss'
+  end
 
+  factory :philenews, class: Feed do |f|
+    f.title 'Philenews'
+    f.url 'http://www.philenews.com/Publications/RssModule/rss.aspx?CategoryId=399'
+  end
+  
+  factory :subscribe_user_to_feed, class: Subscription do |f|
+    f.user_id '0'
+    f.feed_id '0'
+  end
 
-
+  
+  factory :website do |f|
+    f.url ' '
+    f.compatible 'f'
+  end
+  
 end
 

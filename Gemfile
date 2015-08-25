@@ -88,8 +88,7 @@ group :development, :test do
   # Use rails-erd to extract erd from schema - db
   gem 'rails-erd'
 
-
-  gem 'meta_request'
+ # gem 'meta-request'
 end
 
 group :test do

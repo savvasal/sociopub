@@ -14,6 +14,8 @@ class Feed < ActiveRecord::Base
   def fetch
     #feed = Feed.find_by(id: params[:id])
     # τραβά τα άρθρα από τη πηγή και τα καταχωρεί στη βάση
+    # να ελέγχει το host url - αν υπάρχει στη βάση - αν δεν υπάρχει να το βάλει
+    # και να ελέγχει αν είναι συμβατό
     xml = Feedjira::Feed.fetch_and_parse self.url
     xml.entries.each do |e|
       # aprox 2 ms each

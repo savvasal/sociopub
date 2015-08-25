@@ -1,4 +1,5 @@
 class NewspaperController < ApplicationController
+  before_action :admin_user, only: [:index]
   require "addressable/uri"
   def index
     # Όταν αφαιρέσω συνδρομή δεν φέρνει πάλι τα άρθρα της

@@ -9,6 +9,20 @@ class ApplicationController < ActionController::Base
     I18n.locale = params[:locale] ||
                   I18n.default_locale
   end
+
+  # ελέγχει εάν ο χρήστης είναι συνδεδεμένος - repetition at users_controller
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash[:danger] = "Παρακαλώ συνδεθείτε."
+      redirect_to login_url
+    end
+  end
+  
+  # ελέγχει εάν ο χρήστης είναι admin
+  def admin_user
+    redirect_to(root_url) unless current_user.admin?
+  end
   
   
   before_action do

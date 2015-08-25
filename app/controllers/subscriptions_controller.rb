@@ -1,4 +1,5 @@
 class SubscriptionsController < ApplicationController
+  before_action :logged_in_user, only: [:index, :show, :new, :edit, :destroy]
   include SubscriptionsHelper
   
   def index

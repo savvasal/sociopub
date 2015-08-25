@@ -1,5 +1,6 @@
 class FeedsController < ApplicationController
-
+  before_action :admin_user, only: [:edit, :update]
+  before_action :logged_in_user, only: [:index, :new, :create]
   def index
     @feeds = Feed.paginate(page: params[:page])
   end
@@ -33,7 +34,6 @@ class FeedsController < ApplicationController
     end
   end
 
-
   def destroy
     #  Feed.find(params[:id]).destroy
     #  flash[:success] = "Ο ροή διαγράφηκε"
@@ -45,13 +45,13 @@ class FeedsController < ApplicationController
     flash[:success] = "Η ροή #{Feed.find(params[:id].to_i).title} έχει διαγραφεί από τις συνδρομές σας"
   end
 
-  def fetch
-  end
   
   private
 
   def feed_params
     params.require(:feed).permit(:title, :url, :compatible)
   end
+
+
 
 end

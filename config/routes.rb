@@ -1,44 +1,52 @@
 Rails.application.routes.draw do
 
-
-  root 'static_pages#home'
+  # u: Users
+  # a: Admin
+  # v: Visitor
+  # e: Everyone
   
+  # e
+  root 'static_pages#home'
+  get 'contact' => 'static_pages#contact'
+  get 'about' => 'static_pages#about'
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+
+  # v
+  get 'signup' => 'users#new'
+
+  # ua
+  get 'ideas' => 'static_pages#ideas'
+
+
+  # u
   get 'subscribe' => 'subscriptions#index'
   post 'subscribe' => 'subscriptions#create'
   delete 'usubscribe' => 'subscriptions#destroy'
-
-  get 'contact' => 'static_pages#contact'
-  get 'ideas' => 'static_pages#ideas'
-
   get 'newspaper' => 'newspaper#index'
-  
-  get 'help' => 'static_pages#help'
-  get 'contact' => 'static_pages#contact'
-  get 'about' => 'static_pages#about'
-  get 'signup' => 'users#new'
-
   get 'feeds' => 'feeds#index'
   get 'add' => 'feeds#new'
   post 'add' => 'feeds#create'
   
-  get 'login' => 'sessions#new'
-  post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
-  
+
+  # a
   get 'entries' => 'entries#index'
-
-
   get 'websites' => 'websites#index'
   put 'websites' => 'websites#update'
-  
-  resources :websites
+  resources :websites, only: [:index, :update]
+
+  # au
   resources :subscriptions
   resources :users
+  resources :feeds
+  resources :entries
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]
-  resources :feeds
+
+  # a
   resources :fetch_items_from_feed, only: [:edit]
-  resources :entries
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

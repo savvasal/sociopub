@@ -3,9 +3,6 @@ class WebsitesController < ApplicationController
     @websites =  Website.paginate(page: params[:page])
   end
 
-  def edit
-  end
-
   def update
     @website = Website.find(params[:id]) 
     if @website.update_attribute(:compatible, params[:compatible])

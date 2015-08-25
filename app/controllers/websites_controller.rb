@@ -1,6 +1,6 @@
 class WebsitesController < ApplicationController
   def index
-    @websites =  Website.paginate(page: params[:page])
+    @websites =  Website.paginate(page: params[:page], :per_page => 9)
   end
 
   def update

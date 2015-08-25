@@ -2,8 +2,33 @@
 <h1>Όλες οι πηγές</h1>
 <%= will_paginate%>
 <% @feeds.each do |feed| %>
-<%= render feed %>
+
+<li>
+  <!-- comments -->
+  <!-- Αυτή η όψη εκφράζει subscription - Να μετακινηθεί με τη πρώτη ευκαιρία -->
+  <% if !current_user.admin? %>
+  
+  <% if feed.subscribed_by?(current_user) %>
+  <%= link_to "Διαγραφή", feed, method: :delete %>
+  <% else %>
+  <%= link_to "Εγγραφή",  edit_subscription_url(feed.id) %>
+  <% end %>
+  |
+  <% end %>
+  <!-- {controller: "subscriptions", action: "create", url: feed.url} -->
+  <!--% else %-->
+  <!--% end %-->
+  <%= link_to feed.title, feed.url %>
+  <% if current_user.admin? %>
+  | <%= link_to "Επεξεργασία",   edit_feed_path(feed.id) %> |
+  <%= link_to "Ανανέωση", fetch_path(:id => feed.id, :page => params[:page] ) %>
+  <% end %>
+  <!-- websites_path(:id => site.id, :compatible => false ), method: :put-->
+  <!--% if feed.subscribed_by?(current_user)%-->
+  <!--%= link_to "Διαγραφή", feed, method: :delete %-->
+</li>
+
+
 <% end %>
-</ul>
 
 <%= will_paginate%>

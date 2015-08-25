@@ -4,7 +4,8 @@
 <% @websites.each do |site| %>
 <li>
   <!--το πιο κάτω μπορεί να μπει σε ξεχωριστή συνάρτηση -->
-  <%= site.url.sub(/^https?\:\/\//, '').sub(/^www./,'').chop %> |
+  <%= site.url.sub(/^https?\:\/\//, '').sub(/^www./,'') %>
+  |
   <% if site.compatible? %>
   <%= link_to "Επισήμανση ως Μη Συμβατή",  websites_path(:id => site.id, :compatible => false ), method: :put %>
   <% else %>

@@ -23,9 +23,12 @@ Rails.application.routes.draw do
   get 'subscribe' => 'subscriptions#index'
   post 'subscribe' => 'subscriptions#create'
   delete 'usubscribe' => 'subscriptions#destroy'
+  
   get 'newspaper' => 'newspaper#index'
+  
   get 'feeds' => 'feeds#index'
   get 'add' => 'feeds#new'
+  get 'fetch' => 'feeds#fetch'
   post 'add' => 'feeds#create'
   
   delete 'logout' => 'sessions#destroy'
@@ -45,7 +48,7 @@ Rails.application.routes.draw do
   resources :password_resets, only: [:new, :create, :edit, :update]
 
   # a
-  resources :fetch_items_from_feed, only: [:edit]
+  # resources :fetch_items_from_feed, only: [:edit]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

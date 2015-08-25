@@ -3,7 +3,8 @@
 <%= will_paginate %>
 <% @entries.each do |entry| %>
 <li>
-  <%= link_to entry.title, entry.url, :target => "_blank" %>
+  <%= link_to entry.title, entry.url, :target => "_blank" %> 
+  
 </li>
 <% end %>
 </ul>

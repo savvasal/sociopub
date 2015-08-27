@@ -65,7 +65,7 @@ gem 'rack-gsub', '~> 0.1.0'
 #gem 'stopwords-filter', '0.3.1'
 
 #gem 'similarity', '0.2.5'
-gem 'gsl', '1.16.0.6'
+# gem 'gsl', '1.16.0.6'
 
 # gem 'rubyzip', '~> 1.1.7'
 #gem 'zip', '~> 2.0.2'

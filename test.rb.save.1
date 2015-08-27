@@ -1,0 +1,14 @@
+corpus = Array.new
+Entry.take(55).each do |e|
+ doc = Pismo::Document.new(e.url)
+ bod = TfIdfSimilarity::Document.new(doc.body)
+ corpus << bod
+end
+model = TfIdfSimilarity::TfIdfModel.new(corpus)
+matrix = model.similarity_matrix
+model
+nearest =  Array.new
+corpus.each do |c|
+  nearest << matrix[model.document_index(corpus[50]), model.document_index(c)]
+end
+

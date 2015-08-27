@@ -26,7 +26,7 @@ class ApplicationController < ActionController::Base
   
   
   before_action do
-    if current_user && current_user.admin? && Rails.env != "test"
+    if current_user && current_user.admin? && Rails.env == "development"
       Rack::MiniProfiler.authorize_request
     end
   end

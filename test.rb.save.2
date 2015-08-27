@@ -1,0 +1,42 @@
+require 'matrix'
+ellada = Pismo::Document.new('http://www.politis-news.com/cgibin/hweb?-A=300496&-V=articles')
+arthro = TfIdfSimilarity::Document.new(ellada.body)
+corpus = Array.new
+Entry.take(50).each do |e|
+ doc = Pismo::Document.new(e.url)
+ bod = TfIdfSimilarity::Document.new(doc.body)
+ corpus << bod
+end
+corpus.length
+# new_corpus = Array.new
+corpus << arthro
+model = TfIdfSimilarity::TfIdfModel.new(corpus)
+matrix = model.similarity_matrix
+corpus.class
+nearest = Array.new
+corpus.each do |c|
+ nearest << matrix[model.document_index(c), model.document_index(arthro)]
+end
+nearest.pop
+nearest.each_with_index.max[1]
+
+require 'matrix'
+corpus = Array.new
+doc = Pismo::Document.new('http://www.politis-news.com/cgibin/hweb?-A=300496&-V=articles')
+ellada = TfIdfSimilarity::Document.new(doc.body)
+doc = Pismo::Document.new('http://www.politis-news.com/cgibin/hweb?-A=300486&-V=articles')
+ela = TfIdfSimilarity::Document.new(doc.body)
+doc = Pismo::Document.new('http://www.politis-news.com/cgibin/hweb?-A=300504&-V=articles')
+ethapsan = TfIdfSimilarity::Document.new(doc.body)
+corpus << ellada
+corpus << ela
+corpus << ethapsan
+model = TfIdfSimilarity::TfIdfModel.new(corpus)
+matrix = model.similarity_matrix
+
+nearest = Array.new
+nearest << matrix[model.document_index(corpus[0]), model.document_index(corpus[1])]
+nearest << matrix[model.document_index(corpus[0]), model.document_index(corpus[2])]
+nearest << matrix[model.document_index(corpus[2]), model.document_index(corpus[1])]
+
+ 

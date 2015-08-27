@@ -55,10 +55,17 @@ gem 'nokogiri', '1.6.6.2'
 #gem 'mechanize', '2.7.3'
 gem 'pismo', '0.7.4'
 
+gem 'tf-idf-similarity', '~> 0.1.4'
+
+gem 'rmagick', '~> 2.15.4'
+gem 'kmeans', '~> 0.1.1'
+gem 'rsemantic', '~> 0.3.0'
+gem 'rack-gsub', '~> 0.1.0'
+
 #gem 'stopwords-filter', '0.3.1'
 
 #gem 'similarity', '0.2.5'
-#gem 'gsl', '1.16.0.6'
+gem 'gsl', '1.16.0.6'
 
 # gem 'rubyzip', '~> 1.1.7'
 #gem 'zip', '~> 2.0.2'

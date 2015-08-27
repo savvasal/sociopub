@@ -59,7 +59,7 @@ gem 'tf-idf-similarity', '~> 0.1.4'
 
 gem 'rmagick', '~> 2.15.4'
 gem 'kmeans', '~> 0.1.1'
-gem 'rsemantic', '~> 0.3.0'
+# gem 'rsemantic', '~> 0.3.0'
 gem 'rack-gsub', '~> 0.1.0'
 
 #gem 'stopwords-filter', '0.3.1'

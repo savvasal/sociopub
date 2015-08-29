@@ -4,7 +4,10 @@
 <% @entries.each do |entry| %>
 <li>
   <%= link_to entry.title, entry.url, :target => "_blank" %> 
+  |   <%= link_to "Αποθήκευση",  '#'  %>
+  |   <%= link_to "Διάβασε",  '#'  %>
   
+  <!-- save_path(:id => feed.id, :page => params[:page] ) -->
 </li>
 <% end %>
 </ul>

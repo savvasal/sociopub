@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   get 'fetch' => 'feeds#fetch'
   post 'add' => 'feeds#create'
   
+  
   delete 'logout' => 'sessions#destroy'
 
   # a
@@ -40,6 +41,7 @@ Rails.application.routes.draw do
   resources :websites, only: [:index, :update]
 
   # au
+  resources :entries
   resources :subscriptions
   resources :users
   resources :feeds

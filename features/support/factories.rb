@@ -44,7 +44,12 @@ FactoryGirl.define do
     f.title 'Philenews'
     f.url 'http://www.philenews.com/Publications/RssModule/rss.aspx?CategoryId=399'
   end
-  
+
+  factory :paideianews, class: Feed do |f|
+    f.title 'Philenews'
+    f.url 'http://www.paideia-news.com/rss/news.xml'
+  end
+
   factory :subscribe_user_to_feed, class: Subscription do |f|
     f.user_id '0'
     f.feed_id '0'

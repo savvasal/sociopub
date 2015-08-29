@@ -8,4 +8,10 @@ class Entry < ActiveRecord::Base
     doc = Pismo::Document.new(self.url)
     doc.keywords.take(3).to_h.keys
   end
+  
+  def save_to_file
+    File.open("myentry.txt", "w") do |f|
+      f.write(self.url)
+    end
+  end
 end

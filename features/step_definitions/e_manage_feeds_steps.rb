@@ -1,5 +1,6 @@
 Δεδομένου(/^ότι εισέρχομαι στην εφαρμογή ως Διαχειριστής$/) do
-  alan = FactoryGirl.create(:ted)
+  @ted = FactoryGirl.create(:ted)
+  @alan = FactoryGirl.create(:alan)
   visit login_path
   fill_in('session_username', :with => "ted")
   fill_in('session_password', :with => "database")
@@ -9,11 +10,6 @@ end
 
 
 Τότε(/^εμφανίζεται υπερσύνδεσμος για επεξεργασία πηγής δίπλα από κάθε πηγή$/) do
-  # Το πιο κάτω ενοείται
-  # Ήταν καλύτερα να γίνεται με factory girl
-  url = "http://www.paideia-news.com/rss/news.xml"
-  fill_in('subscription_url', :with => url)
-  click_button('Εγγραφή')
   page.should have_content("Επεξεργασία")
 end
 
@@ -30,7 +26,7 @@ end
 end
 
 Δεδομένου(/^ζητώ να διαχειριστώ τις συνδρομές μου$/) do
-  visit subscriptions_path
+  visit feeds_path
 end
 
 Όταν(/^επισυμαίνω τη ροή ως συμμβατή$/) do

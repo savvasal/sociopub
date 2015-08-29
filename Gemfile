@@ -25,7 +25,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+# gem 'therubyracer', plaltforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -54,6 +54,15 @@ gem 'nokogiri', '1.6.6.2'
 
 #gem 'mechanize', '2.7.3'
 gem 'pismo', '0.7.4'
+gem 'whatlanguage', '~> 1.0.5'
+
+# gem 'etherpad-lite', '~> 0.3.0'
+# gem 'google-api-client', '0.9.pre3'
+# gem 'googleauth', '~> 0.4.2'
+# gem 'signet', '~> 0.6.1'
+# gem 'dropbox', '~> 1.3.0'
+# gem 'dropbox-sdk'
+
 
 gem 'tf-idf-similarity', '~> 0.1.4'
 

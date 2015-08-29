@@ -1,0 +1,14 @@
+<% provide(:title, 'Συνδρομές') %>
+<h2>Καινούργια Συνδρομή</h2>
+
+<%= render 'form'%>
+
+<h2>Οι Συνδρομές μου</h2>
+<% current_user.my_subscriptions.each do |feed| %>
+<%= render feed %>
+<% end %>
+
+<h2>Άλλες Συνδρομές</h2>
+<% current_user.other_subscriptions.each do |feed| %>
+<%= render feed %>
+<% end %>

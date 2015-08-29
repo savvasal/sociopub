@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150829190846) do
+=======
+ActiveRecord::Schema.define(version: 20150810061054) do
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +25,7 @@ ActiveRecord::Schema.define(version: 20150829190846) do
     t.string   "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
     t.datetime "published"
     t.string   "language"
     t.text     "content"
@@ -28,6 +33,10 @@ ActiveRecord::Schema.define(version: 20150829190846) do
 
   add_index "entries", ["published"], name: "index_entries_on_published", using: :btree
 
+=======
+  end
+
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
   create_table "feeds", force: :cascade do |t|
     t.string   "title"
     t.string   "url"
@@ -73,6 +82,7 @@ ActiveRecord::Schema.define(version: 20150829190846) do
 
   add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
+<<<<<<< HEAD
   create_table "websites", force: :cascade do |t|
     t.string   "url"
     t.boolean  "compatible", default: false
@@ -82,4 +92,6 @@ ActiveRecord::Schema.define(version: 20150829190846) do
 
   add_index "websites", ["url"], name: "index_websites_on_url", using: :btree
 
+=======
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 end

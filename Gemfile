@@ -11,9 +11,14 @@ gem 'feedjira'
 gem 'rails-i18n', '4.0.4'
 
 # Use postgresql as the database for Active Record
+<<<<<<< HEAD
 gem 'pg', '~> 0.18.2'
 
 # Use SCSS for stylesheetsf
+=======
+gem 'pg'
+# Use SCSS for stylesheets
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 gem 'sass-rails', '~> 5.0'
 
 gem 'bootstrap-sass', '3.3.5'
@@ -25,7 +30,11 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
+<<<<<<< HEAD
 # gem 'therubyracer', plaltforms: :ruby
+=======
+# gem 'therubyracer', platforms: :ruby
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -39,13 +48,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 # Use Unicorn as the app server
 # gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+<<<<<<< HEAD
 # Use addresable to extract the domain from a given url
 gem 'addressable', '2.3.8'
 
@@ -87,6 +100,8 @@ gem 'rack-mini-profiler', require: false
 gem 'flamegraph', '~> 0.1.0'
 gem 'stackprof', '~> 0.2.7'
 
+=======
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -97,6 +112,7 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
+<<<<<<< HEAD
   # Use fake to generate fake data in database
   gem 'faker', '1.4.2'
 
@@ -104,13 +120,23 @@ group :development, :test do
   gem 'rails-erd'
 
  # gem 'meta-request'
+=======
+  
+  gem 'faker', '1.4.2'
+
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 end
 
 group :test do
   gem 'cucumber-rails', '1.4.0', :require => false
+<<<<<<< HEAD
   #  gem 'capybara-email', '2.4.0'
   gem 'email_spec', '1.6.0'
   gem 'action_mailer_cache_delivery', '0.3.7'
+=======
+  gem 'capybara-email', '2.4.0'
+  gem 'email_spec', '1.6.0'
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
   gem 'show_me_the_cookies', '3.0.0'
   gem 'rspec-rails', '2.11.0'
   gem 'database_cleaner', '~> 1.2.0'
@@ -119,8 +145,11 @@ group :test do
   gem 'mini_backtrace', '0.1.3'
   gem 'guard-minitest', '2.3.1'
   gem 'sqlite3', '1.3.10'
+<<<<<<< HEAD
   gem 'selenium-webdriver', '2.47.1'
   # gem 'capybara-screenshot'
+=======
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 end
 
 

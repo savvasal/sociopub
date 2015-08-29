@@ -56,9 +56,14 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test: &test
+<<<<<<< HEAD
   <<: *default
   database: sociopub_test
 
+=======
+  adapter: sqlite3
+  database: db/test.sqlite3
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 
 cucumber: &cucumber
   <<: *test

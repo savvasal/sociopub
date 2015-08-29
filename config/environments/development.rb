@@ -23,7 +23,11 @@ Rails.application.configure do
     port:                 465,
     domain: 'savinos.org',
     user_name:            'noreply@savinos.org',
+<<<<<<< HEAD
     password:           ENV["SOCIOPUB_EMAIL_PASSWORD"],
+=======
+    password:              ENV["SOCIOPUB_EMAIL_PASSWORD"],
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
     authentication:       'plain',
     ssl: true }
   
@@ -48,6 +52,9 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+<<<<<<< HEAD
 
   config.assets.raise_production_errors = true
+=======
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 end

@@ -3,6 +3,7 @@ class Entry < ActiveRecord::Base
   validates_format_of :url, :with => URI::regexp(%w(http https))
   has_many :sources, dependent: :destroy
   has_many :feeds, through: :sources
+<<<<<<< HEAD
 
   def keywords
     doc = Pismo::Document.new(self.url)
@@ -14,4 +15,6 @@ class Entry < ActiveRecord::Base
       f.write(self.url)
     end
   end
+=======
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 end

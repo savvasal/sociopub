@@ -3,11 +3,15 @@
 <%= will_paginate %>
 <% @entries.each do |entry| %>
 <li>
+<<<<<<< HEAD
   <%= link_to entry.title, entry.url, :target => "_blank" %> 
   |   <%= link_to "Αποθήκευση",  '#'  %>
   |   <%= link_to "Διάβασε",  '#'  %>
   
   <!-- save_path(:id => feed.id, :page => params[:page] ) -->
+=======
+  <%= link_to entry.title, entry.url, :target => "_blank" %>
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 </li>
 <% end %>
 </ul>

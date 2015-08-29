@@ -1,6 +1,7 @@
 <h1>sociopub</h1>
 
 <p>
+<<<<<<< HEAD
   Γεια σου <%= @user.username%>,
 </p>
 <p>
@@ -14,5 +15,14 @@
 <%= link_to "Ενεργοποίηση", edit_account_activation_url(@user.activation_token, email: @user.email) %>
 
 
+=======
+  Γεια σου, <%= @user.username%>,
+</p>
+<p>
+  Καλοσώρισες στο sociopub. Ακολούθησε το πιο κάτω σύνδεσμο για να ενεργοποιήσεις το λογαριασμό σου.
+</p>
+
+<%= link_to "Activate", edit_account_activation_url(@user.activation_token, email: @user.email) %>
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 
 

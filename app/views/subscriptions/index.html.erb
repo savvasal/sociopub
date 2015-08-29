@@ -1,4 +1,5 @@
 <% provide(:title, 'Συνδρομές') %>
+<<<<<<< HEAD
 <h2>Καινούρια Συνδρομή</h2>
 
 <%= render 'form'%>
@@ -21,3 +22,18 @@
 </li>
 
 <!--%= will_paginate%-->
+=======
+<h2>Καινούργια Συνδρομή</h2>
+
+<%= render 'form'%>
+
+<h2>Οι Συνδρομές μου</h2>
+<% current_user.my_subscriptions.each do |feed| %>
+<%= render feed %>
+<% end %>
+
+<h2>Άλλες Συνδρομές</h2>
+<% current_user.other_subscriptions.each do |feed| %>
+<%= render feed %>
+<% end %>
+>>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70

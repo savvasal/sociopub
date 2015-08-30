@@ -1,9 +1,0 @@
-<% provide(:title, 'Όλες οι πηγές') %>
-<h1>Όλοι</h1>
-<%= will_paginate%>
-<% @feeds.each do |feed| %>
-<%= render feed %>
-<% end %>
-</ul>
-
-<%= will_paginate%>

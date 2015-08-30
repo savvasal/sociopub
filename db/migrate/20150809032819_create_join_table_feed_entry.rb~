@@ -1,8 +1,0 @@
-class CreateJoinTableFeedEntry < ActiveRecord::Migration
-  def change
-    create_join_table :feeds, :entries do |t|
-      # t.index [:feed_id, :entry_id]
-      # t.index [:entry_id, :feed_id]
-    end
-  end
-end

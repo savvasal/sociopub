@@ -11,9 +11,5 @@ class AccountActivationsController < ApplicationController
       flash[:danger] = "Άκυρος υπερσύνδεσμος"
       redirect_to root_url
     end
-<<<<<<< HEAD
   end 
-=======
-  end
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 end

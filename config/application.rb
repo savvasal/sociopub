@@ -25,6 +25,8 @@ module Sociopub
     config.assets.initialize_on_precompile = false
     config.serve_static_files = true
 
+    config.serve_static_assets = true
+        
 
     config.autoload_paths += %W(#{Rails.root}/lib)
   end

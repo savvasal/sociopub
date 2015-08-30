@@ -1,14 +1,10 @@
 class FeedsController < ApplicationController
 
-<<<<<<< HEAD
   before_action :admin_user, only: [:edit, :update, :fetch]
   before_action :logged_in_user, only: [:index, :new, :create]
+  
   def index
     @feeds = Feed.paginate(page: params[:page], :per_page => 9)
-=======
-  def index
-    @feeds = Feed.paginate(page: params[:page])
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
   end
   
   def new
@@ -17,7 +13,6 @@ class FeedsController < ApplicationController
 
   def create
     # να παίρνει το τίτλο από την πηγή
-<<<<<<< HEAD
     # @feed = Feed.new(feed_params)
     # if @feed.save
     #  flash[:info] = "Η ροή καταχωρήθηκε με επιτυχία."
@@ -39,14 +34,12 @@ class FeedsController < ApplicationController
       redirect_to subscriptions_path
     else
       render 'edit'
-=======
-    @feed = Feed.new(feed_params)
-    if @feed.save
-      flash[:info] = "Η ροή καταχωρήθηκε με επιτυχία."
-      redirect_to feeds_path
-    else
-      render 'new'
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
+      #@feed = Feed.new(feed_params)
+      #if @feed.save
+      #  flash[:info] = "Η ροή καταχωρήθηκε με επιτυχία."
+      #redirect_to feeds_path
+      #else
+      # render 'new'
     end
   end
 
@@ -61,7 +54,6 @@ class FeedsController < ApplicationController
     flash[:success] = "Η ροή #{Feed.find(params[:id].to_i).title} έχει διαγραφεί από τις συνδρομές σας"
   end
 
-<<<<<<< HEAD
   # Τραβά τα άρθρα από τη πηγή και τα καταχωρεί στη βάση
   # 
   # @param: Feed.id
@@ -80,15 +72,6 @@ class FeedsController < ApplicationController
 
   def feed_params
     params.require(:feed).permit(:title, :url, :compatible)
-=======
-  def fetch
-  end
-  
-  private
-
-  def feed_params
-    params.require(:feed).permit(:title, :url)
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
   end
 
 end

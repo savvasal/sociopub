@@ -29,13 +29,9 @@ Rails.application.configure do
   # Tell Action Mailer not to deliver emails to the real world.
   # The :test delivery method accumulates sent emails in the
   # ActionMailer::Base.deliveries array.
-<<<<<<< HEAD
   config.action_mailer.delivery_method = :cache
-=======
   # config.action_mailer.delivery_method = :test
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 
-  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.raise_delivery_errors = true
   
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }

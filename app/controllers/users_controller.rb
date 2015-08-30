@@ -24,11 +24,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       @user.send_activation_email
-<<<<<<< HEAD
       flash[:info] = "Η εγγραφή έγινε με επιτυχία. Ελέγξτε το η-ταχυδρομείο σας για επαλήθευση."
-=======
-      flash[:info] = "Ελέγξτε το ηλεκτρονικό σας ταχυδρομείο."
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
       redirect_to @user
     else
       render 'new'
@@ -65,9 +61,6 @@ class UsersController < ApplicationController
   
   # Before filters
   
-<<<<<<< HEAD
-  
-=======
   # Confirms a logged-in user.
   def logged_in_user
     unless logged_in?
@@ -77,19 +70,15 @@ class UsersController < ApplicationController
     end
   end
 
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
   # Confirms the correct user
   def correct_user
     @user = User.find(params[:id])
     redirect_to(root_url) unless current_user?(@user)
   end
 
-<<<<<<< HEAD
-=======
   # Confirms an admin user.
   def admin_user
     redirect_to(root_url) unless current_user.admin?
   end
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 
 end

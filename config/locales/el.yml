@@ -4,31 +4,20 @@ el:
       user: Χρήστη
     attributes:
       user:
-<<<<<<< HEAD
         username: "Ψευδώνυμο"
         email: "Η-Διεύθυνση"
-=======
-        username: "Όνομα Χρήστη"
-        email: "Ηλεκτρονική Διεύθυνση"
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
         password: "Κωδικός"
         password_confirmation: "Επανάληψη Κωδικού"
         delete: "Διαγραφή"
       feed:
         title: "Τίτλος"
         url: "Υπερσύνδεσμος"
-<<<<<<< HEAD
   errors:
     format: "Το πεδίο %{attribute} %{message}"
-=======
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
   helpers:
     submit:
       create: "Εγγραφή"
   will_paginate:
-<<<<<<< HEAD
     next_label: "Επόμενο φύλλο"
-=======
-    next_label: "Επόμενη φύλλο"
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
     previous_label: "Προηγούμενο φύλλο"
+    

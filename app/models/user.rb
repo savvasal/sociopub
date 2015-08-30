@@ -1,9 +1,5 @@
 class User < ActiveRecord::Base
-<<<<<<< HEAD
-
-=======
   # has_many :microposts
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save :downcase_email
   before_save :downcase_username
@@ -11,23 +7,16 @@ class User < ActiveRecord::Base
 
   has_many :subscriptions, dependent: :destroy
   has_many :feeds, through: :subscriptions
-<<<<<<< HEAD
 
   # \w+\-. για να παίρνει τελεία και παύλα
-=======
-  
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
   VALID_USERNAME_REGEX = /\A\p{Alnum}+\z/
   validates :username, presence: true, uniqueness: true,
             format: { with: VALID_USERNAME_REGEX },
             length: {maximum:20 }
-<<<<<<< HEAD
   
   # valid email address according to https://tools.ietf.org/html/rfc3696#section-3 - need fix
+  # VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]*\.[a-z]+\z/i
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[\w\-\.]+\w+\z/i
-=======
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]*\.[a-z]+\z/i
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
   validates :email, presence: true,
             format: { with: VALID_EMAIL_REGEX },
             uniqueness: {case_sensitive: false}
@@ -42,13 +31,6 @@ class User < ActiveRecord::Base
                BCrypt::Engine.cost
       BCrypt::Password.create(string, cost: cost)
     end
-<<<<<<< HEAD
-    
-    
-=======
-
-        
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
     # Return a random token
     def new_token
       SecureRandom.urlsafe_base64
@@ -56,7 +38,6 @@ class User < ActiveRecord::Base
   end
 
   def my_subscriptions
-<<<<<<< HEAD
     # p Feed.all
     # p Subscription.all
     # p self
@@ -64,17 +45,12 @@ class User < ActiveRecord::Base
     #.where(feeds: {compatible: true})
   end
 
-
-=======
-    Feed.joins(:subscriptions).where(subscriptions: {user_id: self.id})
-  end
-
+  
   # Βγάζει και πηγές που ανήκουν στο χρήστη 
   def other_subscriptions
     Feed.joins(:subscriptions).where.not(subscriptions: {user_id: self.id})
   end
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
-  
+
   # Remembers a user in the database for use in peristent sessions.
   def remember
     self.remember_token = User.new_token
@@ -99,12 +75,12 @@ class User < ActiveRecord::Base
     update_attribute(:activated_at, Time.zone.now)
   end
 
-  
+
   # Sends activation email.
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
   end
-  
+
   # Sets the password reset attributes.
   def create_reset_digest
     self.reset_token = User.new_token
@@ -116,52 +92,37 @@ class User < ActiveRecord::Base
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
   end
-<<<<<<< HEAD
-  
+
   # Returns true if a password reset has expired.
   def password_reset_expired?
     reset_sent_at < 2.hours.ago
   end
-  
-  
+
+
   def other_subscriptions
     Feed.joins(:subscriptions).where.not(subscriptions: {user_id: self.id})
   end
-  
+
   private
-  
-=======
 
   # Returns true if a password reset has expired.
   def password_reset_expired?
-      reset_sent_at < 2.hours.ago
+    reset_sent_at < 2.hours.ago
   end
-  
+
   private
 
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
   # Converts email to all lower-case
   def downcase_email
     self.email = email.downcase
   end
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
   def downcase_username
     self.username = username.downcase
   end
-  
+
   # Creates and assigns the activation token and digest.
   def create_activation_digest
     self.activation_token = User.new_token
     self.activation_digest = User.digest(activation_token)
   end
-<<<<<<< HEAD
-  
-  
-=======
-
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 end

@@ -3,18 +3,14 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   include SessionsHelper
-<<<<<<< HEAD
 
   before_action :set_locale
-=======
   before_action :set_locale
 
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
   def set_locale
     I18n.locale = params[:locale] ||
                   I18n.default_locale
   end
-<<<<<<< HEAD
 
   # ελέγχει εάν ο χρήστης είναι συνδεδεμένος - repetition at users_controller
   def logged_in_user
@@ -36,8 +32,6 @@ class ApplicationController < ActionController::Base
       Rack::MiniProfiler.authorize_request
     end
   end
-=======
   
 
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
 end

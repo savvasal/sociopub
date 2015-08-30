@@ -36,7 +36,7 @@
     | ada@sociopub,com    |
     | sociopub.com        |
     | ted@sociopub.       |
-    | alan@socio pub.com   |
+    | alan@socio pub.com  |
     | randy@socio+pub.com |
     
   Σενάριο: απόπειρας εγγραφής με πολύ μεγάλο ψευδώνυμο    

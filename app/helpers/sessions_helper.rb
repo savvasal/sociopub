@@ -56,13 +56,11 @@ module SessionsHelper
     redirect_to(session[:forwarding_url] || default)
     session.delete(:forwarding_url)
   end
-<<<<<<< HEAD
-
+  
   # Stores the URL trying to be accessed.
   def store_location
     session[:forwarding_url] = request.url if request.get?
   end
 
-=======
->>>>>>> 33d0173cfd79df6567b76997b2b01b34b8f68d70
+  
 end

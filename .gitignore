@@ -27,7 +27,7 @@ doc/
 .secret
 .gitkeep
 
-*~
+*\~*
 \#*
 
 /log/*

@@ -121,6 +121,7 @@ group :test do
   gem 'sqlite3', '1.3.10'
   gem 'selenium-webdriver', '2.47.1'
   # gem 'capybara-screenshot'
+  gem "codeclimate-test-reporter", require: nil
 end
 
 

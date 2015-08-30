@@ -30,7 +30,6 @@ doc/
 *~
 \#*
 
-=======
 /log/*
 !/log/.keep
 /tmp

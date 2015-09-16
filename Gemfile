@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
 
@@ -63,8 +62,10 @@ gem 'whatlanguage', '~> 1.0.5'
 # gem 'dropbox', '~> 1.3.0'
 # gem 'dropbox-sdk'
 
-
+gem 'stopwords-filter', '~> 0.3.1'
 gem 'tf-idf-similarity', '~> 0.1.4'
+gem 'narray', '~> 0.6.1.1'
+gem 'fast-stemmer', '~> 1.0.2'
 
 gem 'rmagick', '~> 2.15.4'
 gem 'kmeans', '~> 0.1.1'

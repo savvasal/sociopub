@@ -20,7 +20,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address:              'box1048.bluehost.com',
-    port:                 465,
+    port:                 '465',
     domain: 'savinos.org',
     user_name:            'noreply@savinos.org',
     password:              ENV["SOCIOPUB_EMAIL_PASSWORD"],

@@ -41,6 +41,9 @@ class UsersController < ApplicationController
     end
   end
 
+  #
+  #
+  # @note: με τη διαγραφή του θα πρέπει να φεύγουν και οι 
   def destroy
     User.find(params[:id]).destroy
     flash[:success] = "Ο χρήστης διαγράφηκε"

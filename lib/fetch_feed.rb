@@ -9,7 +9,7 @@ class FetchFeed
     @feed = feed
     @parser = parser
     @logger = logger
-    end
+  end
 
 
   # Λαμβάνει το xml αρχείο και εξάγει τα άρθρα από αυτό

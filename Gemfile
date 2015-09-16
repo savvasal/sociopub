@@ -104,7 +104,7 @@ group :development, :test do
   # Use rails-erd to extract erd from schema - db
   gem 'rails-erd'
 
-end
+  end
 
 group :test do
   gem 'cucumber-rails', '1.4.0', :require => false

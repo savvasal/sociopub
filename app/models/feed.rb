@@ -4,7 +4,7 @@ class Feed < ActiveRecord::Base
   has_many :entries, through: :sources
   has_many :sources, dependent: :destroy
   has_many :subscriptions, dependent: :destroy
-  has_many :users, through: :subscriptions
+#  has_many :users, through: :subscriptions
 
   def subscribed_by?(user)
     Subscription.exists?(feed_id: self.id, user_id: user.id)

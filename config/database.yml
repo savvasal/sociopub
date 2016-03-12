@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test: &test
   <<: *default
-  database: sociopub_test
+  database: sociopub_cucumber
 
 cucumber: &cucumber
   <<: *test

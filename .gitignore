@@ -33,3 +33,5 @@ doc/
 /log/*
 !/log/.keep
 /tmp
+
+playground

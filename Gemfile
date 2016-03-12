@@ -5,6 +5,7 @@ gem 'rails', '4.2.2'
 
 # Use feedjira for fetching and parsing RSS feeds
 gem 'feedjira'
+gem 'twitter'
 
 # User Rails Internationalization API
 gem 'rails-i18n', '4.0.4'
@@ -66,6 +67,8 @@ gem 'stopwords-filter', '~> 0.3.1'
 gem 'tf-idf-similarity', '~> 0.1.4'
 gem 'narray', '~> 0.6.1.1'
 gem 'fast-stemmer', '~> 1.0.2'
+gem 'ai4r', '1.13'
+#gem 'som'
 
 gem 'rmagick', '~> 2.15.4'
 gem 'kmeans', '~> 0.1.1'
@@ -97,7 +100,10 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
+  
+  #gem 'ruby-graphviz'
+  gem 'nyaplot'
+  gem 'nyaplot-utils'
   # Use fake to generate fake data in database
   gem 'faker', '1.4.2'
 

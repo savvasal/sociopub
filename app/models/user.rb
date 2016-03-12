@@ -4,10 +4,10 @@ class User < ActiveRecord::Base
   before_save :downcase_email
   before_save :downcase_username
   before_create :create_activation_digest
-
+  
   has_many :subscriptions, dependent: :destroy
-#  has_many :feeds, through: :subscriptions
-
+  has_many :concepts, through: :subscriptions
+  
   # \w+\-. για να παίρνει τελεία και παύλα
   VALID_USERNAME_REGEX = /\A\p{Alnum}+\z/
   validates :username, presence: true, uniqueness: true,

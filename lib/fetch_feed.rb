@@ -27,12 +27,17 @@ class FetchFeed
           article.title = document.title
           article.content = document.body
           article.published = document.datetime
-
+          
           what = WhatLanguage.new(:all)
           article.language = what.language(document.body)
           article.save
-
-          Source.find_or_create_by(feed_id: @feed.id, entry_id: article.id)
+          
+          document.keywords.take(4).to_h.keys.each do |keyword|
+            word = Word.find_or_create_by(word: Stemmer::stem_word(keyword))
+            Keyword.find_or_create_by(word_id: word.id, entry_id: article.id)
+          end
+          
+          # Source.find_or_create_by(feed_id: @feed.id, entry_id: article.id)
         end
       end
     end

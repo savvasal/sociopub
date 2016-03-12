@@ -1,7 +1,8 @@
 class CreateKeywords < ActiveRecord::Migration
   def change
     create_table :keywords do |t|
-      t.string :keyword, null:false, required: true, unique: true 
+      t.integer :entry_id
+      t.integer :word_id
 
       t.timestamps null: false
     end

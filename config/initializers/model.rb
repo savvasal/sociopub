@@ -1,4 +1,5 @@
 TfIdfSimilarity::Model.module_eval do
+  attr_reader :matrix
   def initialize(documents, opts = {})
     @model = TfIdfSimilarity::TermCountModel.new(documents, opts)
     @library = (opts[:library] || :matrix).to_sym

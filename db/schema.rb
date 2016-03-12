@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150916144122) do
+ActiveRecord::Schema.define(version: 20150916161052) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bundles", force: :cascade do |t|
+    t.integer  "concept_id"
+    t.integer  "keyword_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "concepts", force: :cascade do |t|
     t.string   "title",      null: false
@@ -42,29 +49,19 @@ ActiveRecord::Schema.define(version: 20150916144122) do
   end
 
   create_table "keywords", force: :cascade do |t|
-    t.string   "keyword",    null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "sources", force: :cascade do |t|
     t.integer  "entry_id"
-    t.integer  "feed_id"
+    t.integer  "word_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
-  add_index "sources", ["entry_id", "feed_id"], name: "index_sources_on_entry_id_and_feed_id", unique: true, using: :btree
-  add_index "sources", ["feed_id"], name: "index_sources_on_feed_id", using: :btree
 
   create_table "subscriptions", force: :cascade do |t|
     t.integer  "user_id"
-    t.integer  "feed_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "concept_id"
   end
 
-  add_index "subscriptions", ["user_id", "feed_id"], name: "index_subscriptions_on_user_id_and_feed_id", unique: true, using: :btree
   add_index "subscriptions", ["user_id"], name: "index_subscriptions_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
@@ -93,5 +90,11 @@ ActiveRecord::Schema.define(version: 20150916144122) do
   end
 
   add_index "websites", ["url"], name: "index_websites_on_url", using: :btree
+
+  create_table "words", force: :cascade do |t|
+    t.string   "word"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

@@ -5,7 +5,6 @@ gem 'rails', '4.2.2'
 
 # Use feedjira for fetching and parsing RSS feeds
 gem 'feedjira'
-gem 'twitter'
 
 # User Rails Internationalization API
 gem 'rails-i18n', '4.0.4'

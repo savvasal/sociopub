@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   # v
   get 'signup' => 'users#new'
-
+  
   # ua
   get 'ideas' => 'static_pages#ideas'
 

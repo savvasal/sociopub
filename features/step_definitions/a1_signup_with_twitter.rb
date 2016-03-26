@@ -1,5 +1,5 @@
 Δεδομένου(/^εμφανίζεται το εικονίδιο για εγγραφή μέσω twitter$/) do
-  page.should have_content("twitter icon")
+  page.should have_xpath("//img[@alt=\"twitter icon\"]")
 end
 
 Όταν(/^συνδέομαι μέσω του λογαριασμού μου στο twitter$/) do

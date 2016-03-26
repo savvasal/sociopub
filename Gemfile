@@ -128,6 +128,7 @@ group :test do
   gem 'selenium-webdriver', '2.47.1'
   # gem 'capybara-screenshot'
   gem "codeclimate-test-reporter", require: nil
+  gem 'fakeweb', '~> 1.3'
 end
 
 

@@ -79,7 +79,7 @@ class User < ActiveRecord::Base
   # Sends activation email.
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
-  end
+    end
 
   # Sets the password reset attributes.
   def create_reset_digest
@@ -90,7 +90,7 @@ class User < ActiveRecord::Base
 
   # Send password reset email
   def send_password_reset_email
-    UserMailer.password_reset(self).deliver_now
+    UserMailer.password_reset(self).deliver
   end
 
   # Returns true if a password reset has expired.

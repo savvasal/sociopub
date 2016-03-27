@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   def new
   end
 
-  def create
+  def create   
     user = User.find_by(username: params[:session][:username])
     if user && user.authenticate(params[:session][:password])
       if user.activated?
@@ -21,9 +21,10 @@ class SessionsController < ApplicationController
       render 'new'
     end
   end
-  
-  def destroy
-    log_out
-    redirect_to root_url
-  end
+end
+
+def destroy
+  log_out
+  redirect_to root_url
+end
 end

@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   
   has_many :subscriptions, dependent: :destroy
   has_many :concepts, through: :subscriptions
-  
+
   # \w+\-. για να παίρνει τελεία και παύλα
   VALID_USERNAME_REGEX = /\A\p{Alnum}+\z/
   validates :username, presence: true, uniqueness: true,
